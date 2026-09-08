@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Onimusha: Way of the Sword Wiki - Guides, Bosses & Walkthrough</title>
+<meta name="description" content="Unofficial wiki for Onimusha: Way of the Sword — combat, weapons, skills, boss guides, quest walkthroughs, shrine and item locations, secrets, and collectibles.">
+<link rel="canonical" href="https://YOURDOMAIN.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Onimusha: Way of the Sword Wiki">
+<meta property="og:description" content="Unofficial wiki for Onimusha: Way of the Sword — combat, weapons, skills, bosses, walkthroughs, locations, and collectibles.">
+<meta property="og:url" content="https://YOURDOMAIN.com/">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Onimusha: Way of the Sword Wiki",
+  "url": "https://YOURDOMAIN.com/",
+  "description": "Unofficial fan wiki for Onimusha: Way of the Sword, covering combat, weapons, skills, bosses, walkthroughs, locations, and collectibles."
+}
+</script>
+<!-- TODO: Google Analytics — add gtag.js snippet here once a GA4 property exists for this site -->
+<!-- TODO: Google AdSense — add once the site has enough traffic/history to apply -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #0D0B0A;
+    --bg-alt: radial-gradient(1000px 600px at 88% -8%, rgba(168,29,34,0.20), transparent 62%), radial-gradient(800px 550px at 4% 100%, rgba(201,162,75,0.10), transparent 58%);
+    --surface: #1C1815;
+    --surface-soft: #171412;
+    --border: #332C26;
+    --ink: #EDE6DA;
+    --ink-soft: #B8ADA0;
+    --ink-faint: #7A6F63;
+    --primary: #A81D22;
+    --primary-soft: rgba(168,29,34,0.15);
+    --gold: #C9A24B;
+    --gold-soft: rgba(201,162,75,0.10);
+    --font-display: 'Shippori Mincho', 'Georgia', serif;
+    --font-body: 'Inter', system-ui, sans-serif;
+    --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+  }
+
+  *{ box-sizing: border-box; }
+  html,body{ margin:0; padding:0; }
+  body{
+    background: var(--bg);
+    background-image: var(--bg-alt);
+    background-attachment: fixed;
+    color: var(--ink);
+    font-family: var(--font-body);
+    min-height: 100vh;
+    padding: 44px 20px 70px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap{ max-width: 1060px; margin: 0 auto; }
+
+  .site-header{
+    background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
+    padding: 6px 16px; margin: 0 0 34px;
+    display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;
+  }
+  .site-header .brand{
+    font-family: var(--font-display); font-weight: 700; font-size: 15px;
+    color: var(--ink); text-decoration: none; letter-spacing: 0.01em; white-space: nowrap; padding: 10px 0;
+  }
+  .site-nav{ display: flex; gap: 2px; flex-wrap: wrap; }
+  .nav-group{ position: relative; }
+  .nav-trigger{
+    font-family: var(--font-mono); font-size: 12.5px; font-weight: 600;
+    letter-spacing: 0.03em; color: var(--ink-soft); background: none; border: none;
+    cursor: pointer; padding: 10px 10px; border-radius: 8px;
+  }
+  .nav-trigger:hover, .nav-group:focus-within .nav-trigger{ color: var(--gold); background: rgba(201,162,75,0.10); }
+  .nav-menu{
+    display: none; position: absolute; top: 100%; right: 0; z-index: 20;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+    padding: 8px; min-width: 220px; box-shadow: 0 12px 28px rgba(0,0,0,0.5);
+  }
+  .nav-group:hover .nav-menu, .nav-group:focus-within .nav-menu{ display: block; }
+  .nav-menu a{
+    display: block; font-family: var(--font-mono); font-size: 12.5px; font-weight: 600;
+    color: var(--ink-soft); text-decoration: none; padding: 8px 10px; border-radius: 6px;
+  }
+  .nav-menu a:hover{ color: var(--gold); background: rgba(201,162,75,0.10); }
+  @media (max-width: 720px){
+    .site-nav{ width: 100%; flex-direction: column; gap: 0; }
+    .nav-group{ width: 100%; }
+    .nav-trigger{ width: 100%; text-align: left; }
+    .nav-menu{ display: block; position: static; box-shadow: none; border: none; background: none; padding: 0 0 6px 14px; min-width: 0; }
+  }
+
+  header.hero{ margin-bottom: 34px; max-width: 720px; }
+  .eyebrow{
+    font-family: var(--font-mono);
+    font-size: 12px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--gold); margin: 0 0 12px;
+  }
+  h1{
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(32px, 4.5vw, 46px);
+    color: var(--ink);
+    margin: 0 0 14px;
+    letter-spacing: 0.01em;
+    line-height: 1.15;
+  }
+  header.hero p{
+    color: var(--ink-soft);
+    font-size: 15.5px;
+    line-height: 1.7;
+    margin: 0;
+    max-width: 640px;
+  }
+
+  .fact-row{ display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+  .fact-pill{
+    font-family: var(--font-mono); font-size: 12px; font-weight: 600;
+    color: var(--ink-soft); background: var(--surface); border: 1px solid var(--border);
+    border-radius: 999px; padding: 7px 14px;
+  }
+  .fact-pill b{ color: var(--gold); font-weight: 600; }
+
+  .section-title{
+    font-family: var(--font-display); font-size: 22px; font-weight: 700;
+    color: var(--ink); margin: 46px 0 18px; letter-spacing: 0.01em;
+  }
+
+  .guide-section{ margin-bottom: 40px; }
+  .guide-section-head{
+    display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap;
+    margin: 0 0 16px; padding-bottom: 10px; border-bottom: 1px solid var(--border);
+  }
+  .guide-section-head h3{
+    font-family: var(--font-display); font-size: 17px; font-weight: 700; color: var(--ink); margin: 0;
+  }
+  .guide-section-head p{ font-family: var(--font-mono); font-size: 12px; color: var(--ink-faint); margin: 0; }
+  .guide-section--world .guide-section-head h3{ color: var(--gold); }
+
+  .guide-grid{ display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+  @media (max-width: 700px){ .guide-grid{ grid-template-columns: 1fr; } }
+
+  .guide-card{
+    background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
+    padding: 22px; text-decoration: none; display: block;
+    transition: border-color .15s ease, transform .15s ease;
+  }
+  .guide-card:hover{ border-color: var(--primary); transform: translateY(-2px); }
+  .guide-card .icon{
+    width: 36px; height: 36px; border-radius: 10px; background: var(--primary-soft); color: var(--primary);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 14px;
+  }
+  .guide-card .icon svg{ width: 18px; height: 18px; }
+  .guide-card .tag{
+    font-family: var(--font-mono); font-size: 10.5px; font-weight: 700; letter-spacing: 0.06em;
+    text-transform: uppercase; color: var(--primary); margin-bottom: 10px; display: block;
+  }
+  .guide-card h3{ font-family: var(--font-display); font-size: 18px; color: var(--ink); margin: 0 0 8px; }
+  .guide-card p{ font-size: 13.5px; color: var(--ink-soft); line-height: 1.6; margin: 0; }
+  .guide-card.soon{ opacity: 0.5; pointer-events: none; }
+
+  .about{
+    background: var(--surface-soft); border: 1px solid var(--border); border-radius: 14px;
+    padding: 22px 24px; margin-top: 40px; font-size: 13.5px; color: var(--ink-soft); line-height: 1.75;
+  }
+  .about b{ color: var(--ink); }
+
+  footer{
+    max-width: 1060px; margin: 30px auto 0; font-size: 12px; color: var(--ink-faint);
+    text-align: center; line-height: 1.7;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="site-header">
+    <a class="brand" href="/">Onimusha: Way of the Sword</a>
+    <nav class="site-nav">
+      <div class="nav-group">
+        <button type="button" class="nav-trigger">Mechanics</button>
+        <div class="nav-menu">
+          <a href="/combat/">Combat Guide</a>
+          <a href="/weapons/">Weapon Guide</a>
+          <a href="/skills/">Skill Guide</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button type="button" class="nav-trigger">Walkthrough</button>
+        <div class="nav-menu">
+          <a href="/walkthrough/">Quest Walkthrough</a>
+          <a href="/bosses/">Boss Guides</a>
+          <a href="/puzzles/">Puzzle Solutions</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button type="button" class="nav-trigger">World</button>
+        <div class="nav-menu">
+          <a href="/shrines/">Shrine Locations</a>
+          <a href="/items/">Item Locations</a>
+          <a href="/secrets/">Secret Areas</a>
+          <a href="/collectibles/">Collectibles</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <header class="hero">
+    <p class="eyebrow">Unofficial Wiki · Capcom</p>
+    <h1>Onimusha: Way of the Sword</h1>
+    <p>A complete wiki for Capcom's return to the Onimusha series — combat and Issen counters, weapon and skill guides, boss strategies, full quest walkthroughs, and every shrine, item, and secret hidden across Malice-twisted Kyoto.</p>
+    <div class="fact-row">
+      <div class="fact-pill">Released <b>Sept 4, 2026</b></div>
+      <div class="fact-pill">PS5 · Xbox Series X|S · PC · Switch 2</div>
+      <div class="fact-pill">Developer &amp; Publisher <b>Capcom</b></div>
+      <div class="fact-pill">Protagonist <b>Miyamoto Musashi</b></div>
+    </div>
+  </header>
+
+  <p class="section-title">Guides</p>
+
+  <div class="guide-section">
+    <div class="guide-section-head">
+      <h3>Mechanics</h3>
+      <p>How combat, weapons, and skills actually work.</p>
+    </div>
+    <div class="guide-grid">
+      <a class="guide-card" href="/combat/">
+        <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="18" x2="17" y2="7"/><line x1="14" y1="4" x2="20" y2="10"/><line x1="4" y1="20" x2="7" y2="17"/></svg></span>
+        <span class="tag">Core Mechanic</span>
+        <h3>Combat Guide</h3>
+        <p>Parry, Issen counters, Blaze, and how Musashi's defense-first combat actually rewards aggression.</p>
+      </a>
+      <div class="guide-card soon">
+        <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 L15 14 L12 21 L9 14 Z"/></svg></span>
+        <span class="tag">Coming Soon</span>
+        <h3>Weapon Guide</h3>
+        <p>Every blade type, their movesets, and how to choose between them.</p>
+      </div>
+      <div class="guide-card soon">
+        <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/><line x1="12" y1="7" x2="12" y2="12"/><line x1="12" y1="12" x2="6" y2="16"/><line x1="12" y1="12" x2="18" y2="16"/></svg></span>
+        <span class="tag">Coming Soon</span>
+        <h3>Skill Guide</h3>
+        <p>The full skill tree, Soul upgrades, and where to prioritize early.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="guide-section">
+    <div class="guide-section-head">
+      <h3>Walkthrough</h3>
+      <p>Story progression, bosses, and puzzles.</p>
+    </div>
+    <div class="guide-grid">
+      <div class="guide-card soon">
+        <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6 C10 4.5 6 4 4 5 L4 18 C6 17 10 17.5 12 19 C14 17.5 18 17 20 18 L20 5 C18 4 14 4.5 12 6 Z"/><line x1="12" y1="6" x2="12" y2="19"/></svg></span>
+        <span class="tag">Coming Soon</span>
+        <h3>Quest Walkthrough</h3>
+        <p>Full main-story walkthrough, chapter by chapter.</p>
+      </div>
+      <div class="guide-card soon">
+        <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18 L4 10 L8 14 L12 7 L16 14 L20 10 L20 18 Z"/></svg></span>
+        <span class="tag">Coming Soon</span>
+        <h3>Boss Guides</h3>
+        <p>Every boss, their attack patterns, and how to counter them.</p>
+      </div>
+      <div class="guide-card soon">
+        <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9 A3 3 0 1 1 12 13 L12 15"/><circle cx="12" cy="18" r="0.5" fill="currentColor"/></svg></span>
+        <span class="tag">Coming Soon</span>
+        <h3>Puzzle Solutions</h3>
+        <p>Step-by-step answers for every puzzle in the game.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="guide-section guide-section--world">
+    <div class="guide-section-head">
+      <h3>World</h3>
+      <p>Locations, secrets, and collectibles.</p>
+    </div>
+    <div class="guide-grid">
+      <div class="guide-card soon">
+        <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 20 L6 10 L12 6 L18 10 L18 20 Z"/><line x1="4" y1="20" x2="20" y2="20"/><line x1="10" y1="20" x2="10" y2="14" /><line x1="14" y1="20" x2="14" y2="14"/></svg></span>
+        <span class="tag">Coming Soon</span>
+        <h3>Shrine Locations</h3>
+        <p>Every shrine on the map and what each one gives you.</p>
+      </div>
+      <div class="guide-card soon">
+        <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21 C12 21 19 14.5 19 9.5 A7 7 0 1 0 5 9.5 C5 14.5 12 21 12 21 Z"/><circle cx="12" cy="9.5" r="2.3"/></svg></span>
+        <span class="tag">Coming Soon</span>
+        <h3>Item Locations</h3>
+        <p>Key items, upgrade materials, and where to find them.</p>
+      </div>
+      <div class="guide-card soon">
+        <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 3 L12 6 M12 18 L12 21 M3 12 L6 12 M18 12 L21 12"/></svg></span>
+        <span class="tag">Coming Soon</span>
+        <h3>Secret Areas</h3>
+        <p>Hidden rooms, shortcuts, and optional areas easy to miss.</p>
+      </div>
+      <div class="guide-card soon">
+        <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20 C12 20 4 14.5 4 9.2 C4 6.3 6.3 4 9.2 4 C10.9 4 12 5.1 12 5.1 C12 5.1 13.1 4 14.8 4 C17.7 4 20 6.3 20 9.2 C20 14.5 12 20 12 20 Z"/></svg></span>
+        <span class="tag">Coming Soon</span>
+        <h3>Collectibles</h3>
+        <p>Every collectible category and a full checklist for 100%.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="about">
+    <b>About this site:</b> Onimusha: Way of the Sword is an action-adventure game developed and published by Capcom, released September 4, 2026 — the first mainline entry in the Onimusha series since Onimusha: Dawn of Dreams (2006). Set in a stylized, demon-twisted version of feudal Kyoto, it follows Miyamoto Musashi (modeled on legendary actor Toshiro Mifune) as he cuts through the corrupting force known as Malice. This is an independent fan wiki and is not affiliated with or endorsed by Capcom. Guides are being written and expanded as we play through the game — check back for updates.
+  </div>
+
+  <footer>This is an unofficial, fan-made wiki. All game names, characters, and assets are property of their respective owners.</footer>
+</div>
+</body>
+</html>
