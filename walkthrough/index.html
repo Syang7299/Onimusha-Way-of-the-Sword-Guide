@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Onimusha: Way of the Sword Walkthrough — Full Chapter Guide</title>
+<meta name="description" content="Complete chapter-by-chapter walkthrough for Onimusha: Way of the Sword — all 7 chapters, boss placements, Oni Armament unlocks, and the point of no return.">
+<link rel="canonical" href="https://YOURDOMAIN.com/walkthrough/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Onimusha: Way of the Sword Walkthrough">
+<meta property="og:description" content="All 7 chapters, boss placements, Oni Armament unlocks, and the point of no return.">
+<meta property="og:url" content="https://YOURDOMAIN.com/walkthrough/">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Onimusha: Way of the Sword Walkthrough",
+  "description": "Complete chapter-by-chapter walkthrough for Onimusha: Way of the Sword — all 7 chapters, boss placements, Oni Armament unlocks, and the point of no return.",
+  "url": "https://YOURDOMAIN.com/walkthrough/",
+  "mainEntityOfPage": "https://YOURDOMAIN.com/walkthrough/",
+  "dateModified": "2026-09-09"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How many chapters and missions does Onimusha: Way of the Sword have?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Seven chapters, spanning 21 individual missions across Kyoto and its surrounding districts." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the point of no return in Onimusha: Way of the Sword?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Speaking to Ono no Takamura to begin the final mission, 'The Clash at Rendaino,' in Chapter 7. Doing so locks out free-roaming in Rakuto, so finish any side content first." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you miss content permanently before the final mission?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Reportedly no — collectibles and side content stay available right up until you trigger the final mission, so there's no need to rush chapter to chapter out of fear of locking something out early." }
+    }
+  ]
+}
+</script>
+<!-- TODO: Google Analytics — add gtag.js snippet here once a GA4 property exists for this site -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #0D0B0A; --surface:#1C1815; --surface-soft:#171412; --border:#332C26;
+    --ink:#EDE6DA; --ink-soft:#B8ADA0; --ink-faint:#7A6F63;
+    --primary:#A81D22; --primary-soft:rgba(168,29,34,0.15);
+    --gold:#C9A24B; --gold-soft: rgba(201,162,75,0.10);
+    --font-display:'Shippori Mincho','Georgia',serif;
+    --font-body:'Inter',system-ui,sans-serif;
+    --font-mono:'IBM Plex Mono',ui-monospace,monospace;
+    --bg-alt: radial-gradient(1000px 600px at 88% -8%, rgba(168,29,34,0.20), transparent 62%), radial-gradient(800px 550px at 4% 100%, rgba(201,162,75,0.10), transparent 58%);
+  }
+  *{ box-sizing:border-box; }
+  html,body{ margin:0; padding:0; }
+  body{
+    background: var(--bg);
+    background-image: var(--bg-alt);
+    background-attachment: fixed;
+    color: var(--ink);
+    font-family: var(--font-body);
+    padding: 40px 20px 80px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap{ max-width: 760px; margin: 0 auto; }
+  .eyebrow{
+    font-family: var(--font-mono);
+    font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--gold); margin: 0 0 12px;
+  }
+  h1{
+    font-family: var(--font-display); font-weight: 700;
+    font-size: clamp(26px, 4vw, 34px); line-height: 1.2;
+    margin: 0 0 14px; letter-spacing: 0.005em;
+  }
+  .lede{ font-size: 16px; color: var(--ink-soft); line-height: 1.65; margin: 0 0 30px; }
+  h2{
+    font-family: var(--font-display); font-weight: 700; font-size: 19px;
+    margin: 38px 0 14px; color: var(--ink);
+  }
+  h3{
+    font-family: var(--font-display); font-weight: 700; font-size: 16px;
+    margin: 0 0 4px; color: var(--gold);
+  }
+  p{ font-size: 15px; line-height: 1.75; color: var(--ink); margin: 0 0 16px; }
+  ul, ol{ padding-left: 20px; margin: 0 0 16px; }
+  li{ font-size: 15px; line-height: 1.75; margin-bottom: 8px; }
+  li b{ color: var(--gold); }
+
+  table{ width:100%; border-collapse: collapse; margin: 8px 0 20px; font-size: 14px; }
+  th,td{ text-align:left; padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th{ font-family: var(--font-display); font-size: 12.5px; color: var(--gold); }
+  td{ color: var(--ink-soft); }
+  td b{ color: var(--ink); }
+
+  .notice{
+    background: var(--primary-soft); border: 1.5px solid var(--primary); border-radius: 12px;
+    padding: 14px 18px; font-size: 13.5px; line-height: 1.6; margin: 0 0 24px; color: var(--ink-soft);
+  }
+  .spoiler{
+    background: var(--surface); border: 1.5px solid var(--gold); border-radius: 12px;
+    padding: 14px 18px; font-size: 14px; line-height: 1.6; margin: 0 0 24px; color: var(--ink);
+  }
+  .spoiler b{ color: var(--gold); }
+  .callout{
+    background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+    padding: 18px 20px; margin: 24px 0;
+  }
+  .callout p{ margin: 0; }
+
+  .diagram{
+    background: var(--surface-soft); border: 1px solid var(--border); border-radius: 14px;
+    padding: 20px 18px 14px; margin: 10px 0 26px;
+  }
+  .diagram svg{ display:block; width:100%; height:auto; }
+  .diagram-cap{
+    font-family: var(--font-mono); font-size: 11.5px; color: var(--ink-faint);
+    text-align: center; margin-top: 10px; letter-spacing: 0.02em;
+  }
+  .dtext{ font-family: var(--font-mono); }
+
+  .chapter-card{
+    background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+    padding: 18px 20px; margin-bottom: 16px;
+  }
+  .chapter-card h3{ font-size: 16.5px; margin: 0 0 4px; }
+  .chapter-card .subtitle{
+    font-family: var(--font-mono); font-size: 11.5px; color: var(--ink-faint);
+    text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 12px;
+  }
+  .chapter-card p{ font-size: 14.5px; color: var(--ink-soft); margin: 0 0 8px; }
+  .chapter-card p:last-child{ margin-bottom: 0; }
+  .chapter-card .tag{
+    display:inline-block; font-family: var(--font-mono); font-size: 10.5px; font-weight: 700;
+    letter-spacing: 0.05em; text-transform: uppercase; color: var(--primary);
+    background: var(--primary-soft); border-radius: 999px; padding: 3px 10px; margin-left: 8px;
+  }
+
+  .site-header{
+    background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
+    padding: 6px 16px; margin: 0 0 34px;
+    display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;
+  }
+  .site-header .brand{
+    font-family: var(--font-display); font-weight: 700; font-size: 15px;
+    color: var(--ink); text-decoration: none; letter-spacing: 0.01em; white-space: nowrap; padding: 10px 0;
+  }
+  .site-nav{ display: flex; gap: 2px; flex-wrap: wrap; }
+  .nav-group{ position: relative; }
+  .nav-trigger{
+    font-family: var(--font-mono); font-size: 12.5px; font-weight: 600;
+    letter-spacing: 0.03em; color: var(--ink-soft); background: none; border: none;
+    cursor: pointer; padding: 10px 10px; border-radius: 8px;
+  }
+  .nav-trigger:hover, .nav-group:focus-within .nav-trigger{ color: var(--gold); background: rgba(201,162,75,0.10); }
+  .nav-menu{
+    display: none; position: absolute; top: 100%; right: 0; z-index: 20;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+    padding: 8px; min-width: 220px; box-shadow: 0 12px 28px rgba(0,0,0,0.5);
+  }
+  .nav-group:hover .nav-menu, .nav-group:focus-within .nav-menu{ display: block; }
+  .nav-menu a{
+    display: block; font-family: var(--font-mono); font-size: 12.5px; font-weight: 600;
+    color: var(--ink-soft); text-decoration: none; padding: 8px 10px; border-radius: 6px;
+  }
+  .nav-menu a:hover{ color: var(--gold); background: rgba(201,162,75,0.10); }
+  @media (max-width: 720px){
+    .site-nav{ width: 100%; flex-direction: column; gap: 0; }
+    .nav-group{ width: 100%; }
+    .nav-trigger{ width: 100%; text-align: left; }
+    .nav-menu{ display: block; position: static; box-shadow: none; border: none; background: none; padding: 0 0 6px 14px; min-width: 0; }
+  }
+
+  footer{ margin-top: 50px; font-size: 12px; color: var(--ink-faint); line-height: 1.7; }
+  footer a{ color: var(--gold); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="site-header">
+    <a class="brand" href="/">Onimusha: Way of the Sword</a>
+    <nav class="site-nav">
+      <div class="nav-group">
+        <button type="button" class="nav-trigger">Mechanics</button>
+        <div class="nav-menu">
+          <a href="/combat/">Combat Guide</a>
+          <a href="/weapons/">Weapon Guide</a>
+          <a href="/skills/">Skill Guide</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button type="button" class="nav-trigger">Walkthrough</button>
+        <div class="nav-menu">
+          <a href="/walkthrough/">Quest Walkthrough</a>
+          <a href="/bosses/">Boss Guides</a>
+          <a href="/puzzles/">Puzzle Solutions</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button type="button" class="nav-trigger">World</button>
+        <div class="nav-menu">
+          <a href="/shrines/">Shrine Locations</a>
+          <a href="/items/">Item Locations</a>
+          <a href="/secrets/">Secret Areas</a>
+          <a href="/collectibles/">Collectibles</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <p class="eyebrow">Onimusha: Way of the Sword · Walkthrough</p>
+  <h1>Full Chapter Walkthrough</h1>
+  <p class="lede">Seven chapters, 21 missions, spanning Kyoto's districts and the mountains beyond. Here's the shape of the whole campaign — where each Oni Armament unlocks, where each boss sits, and the one choice that ends your ability to freely explore.</p>
+
+  <div class="spoiler">
+    <b>Heavy spoilers ahead.</b> This covers every chapter in order, including the final boss and the point of no return.
+  </div>
+
+  <div class="notice">
+    This guide reflects what's known shortly after launch (September 4, 2026), cross-checked across multiple independent community sources. Exact mission names within each chapter are still being confirmed as we play through ourselves — treat the chapter-level structure as solid and individual mission titles as our best current read.
+  </div>
+
+  <h2>The seven chapters at a glance</h2>
+  <div class="diagram">
+    <svg viewBox="0 0 700 220" xmlns="http://www.w3.org/2000/svg">
+      <rect x="5" y="10" width="90" height="60" rx="8" fill="#1C1815" stroke="#332C26" stroke-width="1.5"/>
+      <text x="50" y="35" text-anchor="middle" class="dtext" font-size="10.5" fill="#EDE6DA" font-weight="700">Ch.1</text>
+      <text x="50" y="52" text-anchor="middle" class="dtext" font-size="9" fill="#B8ADA0">Kiyomizu-dera</text>
+
+      <rect x="100" y="10" width="90" height="60" rx="8" fill="#1C1815" stroke="#332C26" stroke-width="1.5"/>
+      <text x="145" y="35" text-anchor="middle" class="dtext" font-size="10.5" fill="#EDE6DA" font-weight="700">Ch.2</text>
+      <text x="145" y="52" text-anchor="middle" class="dtext" font-size="9" fill="#B8ADA0">Kennin-ji</text>
+
+      <rect x="195" y="10" width="90" height="60" rx="8" fill="#1C1815" stroke="#332C26" stroke-width="1.5"/>
+      <text x="240" y="35" text-anchor="middle" class="dtext" font-size="10.5" fill="#EDE6DA" font-weight="700">Ch.3</text>
+      <text x="240" y="52" text-anchor="middle" class="dtext" font-size="9" fill="#B8ADA0">Nijo-jo</text>
+
+      <rect x="290" y="10" width="120" height="60" rx="8" fill="#1C1815" stroke="#332C26" stroke-width="1.5"/>
+      <text x="350" y="35" text-anchor="middle" class="dtext" font-size="10.5" fill="#EDE6DA" font-weight="700">Ch.4</text>
+      <text x="350" y="52" text-anchor="middle" class="dtext" font-size="9" fill="#B8ADA0">Thunderclaps</text>
+
+      <rect x="415" y="10" width="100" height="60" rx="8" fill="#1C1815" stroke="#332C26" stroke-width="1.5"/>
+      <text x="465" y="35" text-anchor="middle" class="dtext" font-size="10.5" fill="#EDE6DA" font-weight="700">Ch.5</text>
+      <text x="465" y="52" text-anchor="middle" class="dtext" font-size="9" fill="#B8ADA0">Mount Oe</text>
+
+      <rect x="520" y="10" width="100" height="60" rx="8" fill="#1C1815" stroke="#332C26" stroke-width="1.5"/>
+      <text x="570" y="35" text-anchor="middle" class="dtext" font-size="10.5" fill="#EDE6DA" font-weight="700">Ch.6</text>
+      <text x="570" y="52" text-anchor="middle" class="dtext" font-size="9" fill="#B8ADA0">Arashiyama</text>
+
+      <rect x="625" y="10" width="70" height="60" rx="8" fill="#1C1815" stroke="#A81D22" stroke-width="1.5"/>
+      <text x="660" y="35" text-anchor="middle" class="dtext" font-size="10.5" fill="#EDE6DA" font-weight="700">Ch.7</text>
+      <text x="660" y="52" text-anchor="middle" class="dtext" font-size="9" fill="#A81D22" font-weight="700">Rendaino</text>
+
+      <line x1="95" y1="40" x2="100" y2="40" stroke="#7A6F63" stroke-width="2"/>
+      <line x1="190" y1="40" x2="195" y2="40" stroke="#7A6F63" stroke-width="2"/>
+      <line x1="285" y1="40" x2="290" y2="40" stroke="#7A6F63" stroke-width="2"/>
+      <line x1="410" y1="40" x2="415" y2="40" stroke="#7A6F63" stroke-width="2"/>
+      <line x1="515" y1="40" x2="520" y2="40" stroke="#7A6F63" stroke-width="2"/>
+      <line x1="620" y1="40" x2="625" y2="40" stroke="#7A6F63" stroke-width="2"/>
+
+      <rect x="150" y="100" width="400" height="60" rx="8" fill="#1C1815" stroke="#A81D22" stroke-width="1.5"/>
+      <text x="350" y="128" text-anchor="middle" class="dtext" font-size="12" fill="#EDE6DA" font-weight="700">Speak to Ono no Takamura</text>
+      <text x="350" y="146" text-anchor="middle" class="dtext" font-size="10.5" fill="#A81D22" font-weight="700">point of no return — locks Rakuto free-roam</text>
+
+      <line x1="350" y1="70" x2="350" y2="100" stroke="#A81D22" stroke-width="2"/>
+      <path d="M350 100 L344 88 L356 88 Z" fill="#A81D22"/>
+
+      <rect x="200" y="180" width="300" height="40" rx="8" fill="#1C1815" stroke="#C9A24B" stroke-width="1.5"/>
+      <text x="350" y="205" text-anchor="middle" class="dtext" font-size="11" fill="#C9A24B" font-weight="700">Final Boss: Minamoto no Yoshitsune</text>
+
+      <line x1="350" y1="160" x2="350" y2="180" stroke="#7A6F63" stroke-width="2"/>
+    </svg>
+    <p class="diagram-cap">Seven chapters, then a hard stop before the finale</p>
+  </div>
+
+  <h2>Chapter 1 — Kiyomizu-dera &amp; the Oni Refuge</h2>
+  <div class="chapter-card">
+    <h3>Tutorial and opening territory</h3>
+    <div class="subtitle">Introduces core combat</div>
+    <p>The opening chapter teaches Musashi's fundamentals — see our <a href="/combat/">combat guide</a> for the full Parry/Deflect/Issen breakdown taught here.</p>
+    <p><b>Unlocks:</b> The Two Celestials (paired swords) and the Oni Bow, both required story pickups — see our <a href="/weapons/">weapon guide</a>.</p>
+    <p><b>Bosses:</b> Sasaki Ganryu (duel), Daidara (Oni Refuge) — see our <a href="/bosses/">boss guides</a>.</p>
+  </div>
+
+  <h2>Chapter 2 — The Kennin-ji Whirlwind</h2>
+  <div class="chapter-card">
+    <h3>Rakuto district, prison-window sealing</h3>
+    <p>Progresses through Rakuto sealing the demonic "prison windows" and clearing miasma sources that spawn enemies as you go.</p>
+    <p><b>Unlocks:</b> Wind-Whipper, from the mission "The Oni's Apprentice."</p>
+    <p><b>Bosses:</b> Rasho-gan, Byakue, Ifuu.</p>
+  </div>
+
+  <h2>Chapter 3 — Nijo-jo's Cruel Tale</h2>
+  <div class="chapter-card">
+    <h3>Castle investigation and the underground laboratory</h3>
+    <p>Centers on Nijo-jo Castle and the lab beneath it. Includes the mask puzzle tied to "What Lurks in the Shadows" — full solution in our <a href="/puzzles/">puzzle solutions</a>.</p>
+    <p><b>Unlocks:</b> Earth-Shakers (great hammer), from Underground Laboratory Level 4.</p>
+    <p><b>Bosses:</b> Nue (paired serpent fight), Greater Nue.</p>
+  </div>
+
+  <h2>Chapter 4 — Kennin-ji, the Ten-Thousand Thunderclaps</h2>
+  <div class="chapter-card">
+    <h3>Toribeno-focused district missions</h3>
+    <p>Spreads across multiple district missions centered on the Toribeno area.</p>
+    <p><b>Unlocks:</b> Firebird Flute, from mission "Shadows Fall" at Gojo Street–East.</p>
+    <p><b>Bosses:</b> Dohatsu-ten, Benkei (first encounter).</p>
+  </div>
+
+  <h2>Chapter 5 — Mount Oe</h2>
+  <div class="chapter-card">
+    <h3>Mountain ascetic pursuit and cave exploration</h3>
+    <p>Takes the fight up Mount Oe, including rematches against earlier bosses before a major endurance fight.</p>
+    <p><b>Rematches:</b> Byakue, Dohatsu-ten, Sasaki Ganryu (second encounter).</p>
+    <p><b>Unlocks:</b> Flashing Void (piercing spear), from a cave in the Castle Courtyard area.</p>
+    <p><b>Boss:</b> Shuten Doji — a multi-phase endurance fight built around his health regeneration, covered in our <a href="/bosses/">boss guides</a>.</p>
+  </div>
+
+  <h2>Chapter 6 — Arashiyama</h2>
+  <div class="chapter-card">
+    <h3>Western district and swamp crossing</h3>
+    <p>Western Kyoto sealing missions culminating in a swamp crossing. Includes "Storm Chaser," the combined Ifuu-and-Burai encounter.</p>
+    <p><b>Rematch:</b> Sasaki Ganryu (third encounter).</p>
+    <p><b>Unlocks:</b> Still Water (katana), from the northeast corner of the Arashiyama swamp.</p>
+    <p><b>Boss:</b> Dokyo — a chase-and-gimmick fight built around distance and teleporting copies.</p>
+  </div>
+
+  <h2>Chapter 7 — The Clash at Rendaino (Finale)</h2>
+  <div class="chapter-card">
+    <h3>Point of no return</h3>
+    <div class="subtitle">Everything else first</div>
+    <p>Speaking to <b>Ono no Takamura</b> triggers the final mission and locks out free-roaming in Rakuto. Before doing this, wrap up anything you still want to finish — reporting suggests nothing is permanently missable before this point, but it's still the natural line in the sand.</p>
+    <p><b>Gauntlet:</b> Rematches against Benkei, Daidara, Byakue, the Nue pair, Greater Nue, and Dohatsu-ten precede the finale.</p>
+    <p><b>Final Boss:</b> Minamoto no Yoshitsune, across three phases — the hardest fight in the game, with the third phase requiring Oni Awakening to damage at all. See our <a href="/bosses/">boss guides</a> and <a href="/skills/">skill guide</a>.</p>
+  </div>
+
+  <div class="callout">
+    <p><b>Practical takeaway:</b> once you've cleared everything you want in Chapter 6, take stock before talking to Ono no Takamura — that's your actual deadline, not the chapter transitions before it. Reporting also suggests Continue after the credits drops you back to just before this mission, so a completed run doesn't permanently lock you out of finishing collectibles afterward either.</p>
+  </div>
+
+  <h2>Frequently asked questions</h2>
+  <p><b>How many chapters and missions are there?</b><br>Seven chapters across 21 missions total.</p>
+  <p><b>What's the point of no return?</b><br>Speaking to Ono no Takamura to start "The Clash at Rendaino" in Chapter 7 — it locks free-roaming in Rakuto.</p>
+  <p><b>Can you miss content permanently before that?</b><br>Reportedly no — collectibles and side content stay available until the final mission triggers.</p>
+
+  <footer>
+    This is an unofficial, fan-made wiki based on early post-launch information and is not affiliated with or endorsed by Capcom. Diagrams are original illustrations, not game assets. Mission names and chapter details may be refined as more of the game is explored. <a href="/">Back to the wiki home →</a>
+  </footer>
+</div>
+</body>
+</html>

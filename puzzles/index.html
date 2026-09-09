@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Onimusha: Way of the Sword Puzzle Solutions — Masks, Number Rotators &amp; Hidden Maps</title>
+<meta name="description" content="Puzzle solutions for Onimusha: Way of the Sword — the Underground Laboratory mask puzzle, Number Rotator magic-square chests, and how the Hidden Map treasure system works.">
+<link rel="canonical" href="https://YOURDOMAIN.com/puzzles/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Onimusha: Way of the Sword Puzzle Solutions">
+<meta property="og:description" content="The mask puzzle, Number Rotator magic-square chests, and the Hidden Map treasure system explained.">
+<meta property="og:url" content="https://YOURDOMAIN.com/puzzles/">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Onimusha: Way of the Sword Puzzle Solutions",
+  "description": "Puzzle solutions for Onimusha: Way of the Sword — the Underground Laboratory mask puzzle, Number Rotator magic-square chests, and the Hidden Map treasure system.",
+  "url": "https://YOURDOMAIN.com/puzzles/",
+  "mainEntityOfPage": "https://YOURDOMAIN.com/puzzles/",
+  "dateModified": "2026-09-09"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do you solve the mask puzzle in Onimusha: Way of the Sword?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Step outside the doorway and look at each mask's shadow — count the holes of light shining through it. Shoot the masks with your bow in order from fewest holes to most. Reported as a 3rd, 4th, 1st, 2nd mask order in one specific room, but the underlying rule is what matters since mask numbering can vary." }
+    },
+    {
+      "@type": "Question",
+      "name": "What are Number Rotator chests?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Locked chests built as 3x3 magic squares — rotate the dials so every row, column, and diagonal adds up to the same target sum. Different chests use different target sums (15, 21, and 24 have been confirmed) and reward Power and Magic Jewels." }
+    },
+    {
+      "@type": "Question",
+      "name": "How does the Hidden Map treasure system work?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Old Drawings found around the world give a visual clue to a treasure's location. A green search area on the map narrows down roughly where to look, and matching the drawing's landmarks to the real environment finds the exact spot." }
+    }
+  ]
+}
+</script>
+<!-- TODO: Google Analytics — add gtag.js snippet here once a GA4 property exists for this site -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #0D0B0A; --surface:#1C1815; --surface-soft:#171412; --border:#332C26;
+    --ink:#EDE6DA; --ink-soft:#B8ADA0; --ink-faint:#7A6F63;
+    --primary:#A81D22; --primary-soft:rgba(168,29,34,0.15);
+    --gold:#C9A24B; --gold-soft: rgba(201,162,75,0.10);
+    --font-display:'Shippori Mincho','Georgia',serif;
+    --font-body:'Inter',system-ui,sans-serif;
+    --font-mono:'IBM Plex Mono',ui-monospace,monospace;
+    --bg-alt: radial-gradient(1000px 600px at 88% -8%, rgba(168,29,34,0.20), transparent 62%), radial-gradient(800px 550px at 4% 100%, rgba(201,162,75,0.10), transparent 58%);
+  }
+  *{ box-sizing:border-box; }
+  html,body{ margin:0; padding:0; }
+  body{
+    background: var(--bg);
+    background-image: var(--bg-alt);
+    background-attachment: fixed;
+    color: var(--ink);
+    font-family: var(--font-body);
+    padding: 40px 20px 80px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap{ max-width: 760px; margin: 0 auto; }
+  .eyebrow{
+    font-family: var(--font-mono);
+    font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--gold); margin: 0 0 12px;
+  }
+  h1{
+    font-family: var(--font-display); font-weight: 700;
+    font-size: clamp(26px, 4vw, 34px); line-height: 1.2;
+    margin: 0 0 14px; letter-spacing: 0.005em;
+  }
+  .lede{ font-size: 16px; color: var(--ink-soft); line-height: 1.65; margin: 0 0 30px; }
+  h2{
+    font-family: var(--font-display); font-weight: 700; font-size: 19px;
+    margin: 38px 0 14px; color: var(--ink);
+  }
+  h3{
+    font-family: var(--font-display); font-weight: 700; font-size: 15.5px;
+    margin: 0 0 6px; color: var(--gold);
+  }
+  p{ font-size: 15px; line-height: 1.75; color: var(--ink); margin: 0 0 16px; }
+  ul, ol{ padding-left: 20px; margin: 0 0 16px; }
+  li{ font-size: 15px; line-height: 1.75; margin-bottom: 8px; }
+  li b{ color: var(--gold); }
+
+  table{ width:100%; border-collapse: collapse; margin: 8px 0 20px; font-size: 14px; }
+  th,td{ text-align:left; padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th{ font-family: var(--font-display); font-size: 12.5px; color: var(--gold); }
+  td{ color: var(--ink-soft); }
+  td b{ color: var(--ink); }
+
+  .notice{
+    background: var(--primary-soft); border: 1.5px solid var(--primary); border-radius: 12px;
+    padding: 14px 18px; font-size: 13.5px; line-height: 1.6; margin: 0 0 24px; color: var(--ink-soft);
+  }
+  .callout{
+    background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+    padding: 18px 20px; margin: 24px 0;
+  }
+  .callout p{ margin: 0; }
+
+  .diagram{
+    background: var(--surface-soft); border: 1px solid var(--border); border-radius: 14px;
+    padding: 20px 18px 14px; margin: 10px 0 26px;
+  }
+  .diagram svg{ display:block; width:100%; height:auto; }
+  .diagram-cap{
+    font-family: var(--font-mono); font-size: 11.5px; color: var(--ink-faint);
+    text-align: center; margin-top: 10px; letter-spacing: 0.02em;
+  }
+  .dtext{ font-family: var(--font-mono); }
+
+  .move-card{
+    background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+    padding: 16px 20px; margin-bottom: 14px;
+  }
+  .move-card h3{ font-size: 15.5px; margin: 0 0 8px; }
+  .move-card p{ margin: 0 0 8px; font-size: 14px; color: var(--ink-soft); }
+  .move-card p:last-child{ margin-bottom: 0; }
+
+  .site-header{
+    background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
+    padding: 6px 16px; margin: 0 0 34px;
+    display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;
+  }
+  .site-header .brand{
+    font-family: var(--font-display); font-weight: 700; font-size: 15px;
+    color: var(--ink); text-decoration: none; letter-spacing: 0.01em; white-space: nowrap; padding: 10px 0;
+  }
+  .site-nav{ display: flex; gap: 2px; flex-wrap: wrap; }
+  .nav-group{ position: relative; }
+  .nav-trigger{
+    font-family: var(--font-mono); font-size: 12.5px; font-weight: 600;
+    letter-spacing: 0.03em; color: var(--ink-soft); background: none; border: none;
+    cursor: pointer; padding: 10px 10px; border-radius: 8px;
+  }
+  .nav-trigger:hover, .nav-group:focus-within .nav-trigger{ color: var(--gold); background: rgba(201,162,75,0.10); }
+  .nav-menu{
+    display: none; position: absolute; top: 100%; right: 0; z-index: 20;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+    padding: 8px; min-width: 220px; box-shadow: 0 12px 28px rgba(0,0,0,0.5);
+  }
+  .nav-group:hover .nav-menu, .nav-group:focus-within .nav-menu{ display: block; }
+  .nav-menu a{
+    display: block; font-family: var(--font-mono); font-size: 12.5px; font-weight: 600;
+    color: var(--ink-soft); text-decoration: none; padding: 8px 10px; border-radius: 6px;
+  }
+  .nav-menu a:hover{ color: var(--gold); background: rgba(201,162,75,0.10); }
+  @media (max-width: 720px){
+    .site-nav{ width: 100%; flex-direction: column; gap: 0; }
+    .nav-group{ width: 100%; }
+    .nav-trigger{ width: 100%; text-align: left; }
+    .nav-menu{ display: block; position: static; box-shadow: none; border: none; background: none; padding: 0 0 6px 14px; min-width: 0; }
+  }
+
+  footer{ margin-top: 50px; font-size: 12px; color: var(--ink-faint); line-height: 1.7; }
+  footer a{ color: var(--gold); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="site-header">
+    <a class="brand" href="/">Onimusha: Way of the Sword</a>
+    <nav class="site-nav">
+      <div class="nav-group">
+        <button type="button" class="nav-trigger">Mechanics</button>
+        <div class="nav-menu">
+          <a href="/combat/">Combat Guide</a>
+          <a href="/weapons/">Weapon Guide</a>
+          <a href="/skills/">Skill Guide</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button type="button" class="nav-trigger">Walkthrough</button>
+        <div class="nav-menu">
+          <a href="/walkthrough/">Quest Walkthrough</a>
+          <a href="/bosses/">Boss Guides</a>
+          <a href="/puzzles/">Puzzle Solutions</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button type="button" class="nav-trigger">World</button>
+        <div class="nav-menu">
+          <a href="/shrines/">Shrine Locations</a>
+          <a href="/items/">Item Locations</a>
+          <a href="/secrets/">Secret Areas</a>
+          <a href="/collectibles/">Collectibles</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <p class="eyebrow">Onimusha: Way of the Sword · Puzzle Solutions</p>
+  <h1>Puzzle Solutions</h1>
+  <p class="lede">Most puzzles in the game teach you their own logic if you look closely enough — the trick is usually reading an environmental clue correctly, not guessing. Here's every puzzle type we've confirmed, the rule behind each, and specific solutions where we have them.</p>
+
+  <div class="notice">
+    This guide reflects what's known shortly after launch (September 4, 2026), cross-checked across multiple independent community sources. We have confirmed solutions for some specific puzzle instances and the general rule for solving others of the same type — we're not inventing exact answers for chests or masks we haven't verified ourselves, so some entries describe the method rather than a specific solved example.
+  </div>
+
+  <h2>The Mask Puzzle</h2>
+  <div class="move-card">
+    <h3>Underground Laboratory, Level 3 — "What Lurks in the Shadows"</h3>
+    <p>Reached during the questline of the same name, this room presents four masks you need to shoot with your bow in the correct order.</p>
+    <p><b>The rule:</b> step outside the doorway and look at the shadows the masks cast on the wall. Each shadow has a number of holes letting light through — count them. Shoot the masks in order from the fewest holes to the most.</p>
+    <p><b>Reported solution</b> for this specific room: 3rd mask → 4th mask → 1st mask → 2nd mask. If your room looks different, trust the hole-counting rule over this exact sequence — it's the part that's guaranteed to transfer.</p>
+    <p><b>Reward:</b> the Unsettling Mask, which is needed for story progression — see our <a href="/walkthrough/">quest walkthrough</a> for where this sits in Chapter 3.</p>
+  </div>
+
+  <div class="diagram">
+    <svg viewBox="0 0 700 130" xmlns="http://www.w3.org/2000/svg">
+      <rect x="10" y="25" width="160" height="80" rx="10" fill="#1C1815" stroke="#332C26" stroke-width="1.5"/>
+      <text x="90" y="58" text-anchor="middle" class="dtext" font-size="12" fill="#EDE6DA" font-weight="700">Step outside</text>
+      <text x="90" y="78" text-anchor="middle" class="dtext" font-size="10" fill="#B8ADA0">look at the shadows</text>
+
+      <path d="M175 65 L198 65" stroke="#7A6F63" stroke-width="2"/>
+      <path d="M198 65 L189 60 L189 70 Z" fill="#7A6F63"/>
+
+      <rect x="203" y="25" width="160" height="80" rx="10" fill="#1C1815" stroke="#332C26" stroke-width="1.5"/>
+      <text x="283" y="58" text-anchor="middle" class="dtext" font-size="12" fill="#EDE6DA" font-weight="700">Count the holes</text>
+      <text x="283" y="78" text-anchor="middle" class="dtext" font-size="10" fill="#B8ADA0">per mask's shadow</text>
+
+      <path d="M368 65 L391 65" stroke="#7A6F63" stroke-width="2"/>
+      <path d="M391 65 L382 60 L382 70 Z" fill="#7A6F63"/>
+
+      <rect x="396" y="25" width="290" height="80" rx="10" fill="#1C1815" stroke="#C9A24B" stroke-width="1.5"/>
+      <text x="541" y="58" text-anchor="middle" class="dtext" font-size="12" fill="#EDE6DA" font-weight="700">Shoot fewest → most</text>
+      <text x="541" y="78" text-anchor="middle" class="dtext" font-size="10" fill="#C9A24B" font-weight="700">holes determine the order</text>
+    </svg>
+    <p class="diagram-cap">The mask puzzle's underlying rule</p>
+  </div>
+
+  <h2>Number Rotator chests</h2>
+  <p>These locked chests are built as <b>3x3 magic squares</b> — nine dials you rotate so that every row, column, and diagonal adds up to the same target sum. Different chests use different targets:</p>
+  <table>
+    <tr><th>Location</th><th>Target sum</th></tr>
+    <tr><td><b>Gion (Chapter 2)</b></td><td>15</td></tr>
+    <tr><td><b>Crypt (Chapter 4)</b></td><td>21</td></tr>
+    <tr><td><b>Golden Pavilion (Chapter 7)</b></td><td>24</td></tr>
+  </table>
+  <div class="move-card">
+    <h3>Confirmed solution: Gion, northern courtyard alley</h3>
+    <p>Rotate the top row one step right, then the center dial two steps left, to reach the target sum of 15.</p>
+  </div>
+  <p>We haven't independently verified exact rotation steps for the Crypt or Golden Pavilion chests yet — if you're working on those, the magic-square logic is the same: adjust dials until every line (not just one row) sums to the target before assuming you're done.</p>
+
+  <h2>Hidden Map treasures</h2>
+  <p>Rather than a single puzzle type, this is a recurring system: find an <b>Old Drawing</b> somewhere in the world, and it gives you a visual clue — a landmark, a rock formation, a building silhouette — pointing toward a hidden treasure. A green search area appears on your map to narrow the general region, and matching what's in the drawing to what's actually in front of you pinpoints the exact spot.</p>
+  <p>These become available progressively as you advance through the story rather than all at once, so don't worry about ones that don't appear yet — they're tied to your current chapter, not something you can miss by moving forward normally.</p>
+
+  <div class="callout">
+    <p><b>Practical takeaway:</b> for any puzzle that looks like it has a "trick," check for an environmental clue first — a shadow, a drawing, a visible pattern — before brute-forcing combinations. Onimusha's puzzles have consistently rewarded reading the room over guessing so far.</p>
+  </div>
+
+  <h2>Frequently asked questions</h2>
+  <p><b>How do you solve the mask puzzle?</b><br>Count the light-holes in each mask's shadow from outside the doorway, then shoot them in order from fewest holes to most.</p>
+  <p><b>What are Number Rotator chests?</b><br>3x3 magic-square puzzles — rotate dials so every row, column, and diagonal sums to the chest's target number.</p>
+  <p><b>How does the Hidden Map system work?</b><br>Old Drawings give a visual clue to a treasure's location, narrowed by a green search area on the map.</p>
+
+  <footer>
+    This is an unofficial, fan-made wiki based on early post-launch information and is not affiliated with or endorsed by Capcom. Diagrams are original illustrations, not game assets. Puzzle solutions may be refined as more of the game is explored. <a href="/">Back to the wiki home →</a>
+  </footer>
+</div>
+</body>
+</html>
