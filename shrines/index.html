@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Onimusha: Way of the Sword Shrine Locations — Spirit Mirror Guide</title>
+<meta name="description" content="Every Spirit Mirror (shrine) in Onimusha: Way of the Sword — how fast travel, saving, and upgrades work, and where mirrors are distributed across Kyoto.">
+<link rel="canonical" href="https://YOURDOMAIN.com/shrines/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Onimusha: Way of the Sword Shrine Locations">
+<meta property="og:description" content="How Spirit Mirrors work and where they're distributed across Kyoto.">
+<meta property="og:url" content="https://YOURDOMAIN.com/shrines/">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Onimusha: Way of the Sword Shrine Locations",
+  "description": "Every Spirit Mirror (shrine) in Onimusha: Way of the Sword — how fast travel, saving, and upgrades work, and where mirrors are distributed across Kyoto.",
+  "url": "https://YOURDOMAIN.com/shrines/",
+  "mainEntityOfPage": "https://YOURDOMAIN.com/shrines/",
+  "dateModified": "2026-09-09"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are shrines called in Onimusha: Way of the Sword?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Spirit Mirrors. They function as save points, fast travel hubs, and upgrade stations all in one, similar to bonfire-style checkpoints in other action games." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is fast travel available from the start?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No — fast travel unlocks through early story progression rather than being available immediately, and only works between Spirit Mirrors you've already activated." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does resting at a Spirit Mirror have a downside?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — while it fully restores your health, it also respawns standard enemies in the surrounding area. That's a downside if you've just cleared a room, but useful on purpose if you want a farming loop." }
+    }
+  ]
+}
+</script>
+<!-- TODO: Google Analytics — add gtag.js snippet here once a GA4 property exists for this site -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #0D0B0A; --surface:#1C1815; --surface-soft:#171412; --border:#332C26;
+    --ink:#EDE6DA; --ink-soft:#B8ADA0; --ink-faint:#7A6F63;
+    --primary:#A81D22; --primary-soft:rgba(168,29,34,0.15);
+    --gold:#C9A24B; --gold-soft: rgba(201,162,75,0.10);
+    --font-display:'Shippori Mincho','Georgia',serif;
+    --font-body:'Inter',system-ui,sans-serif;
+    --font-mono:'IBM Plex Mono',ui-monospace,monospace;
+    --bg-alt: radial-gradient(1000px 600px at 88% -8%, rgba(168,29,34,0.20), transparent 62%), radial-gradient(800px 550px at 4% 100%, rgba(201,162,75,0.10), transparent 58%);
+  }
+  *{ box-sizing:border-box; }
+  html,body{ margin:0; padding:0; }
+  body{
+    background: var(--bg);
+    background-image: var(--bg-alt);
+    background-attachment: fixed;
+    color: var(--ink);
+    font-family: var(--font-body);
+    padding: 40px 20px 80px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap{ max-width: 760px; margin: 0 auto; }
+  .eyebrow{
+    font-family: var(--font-mono);
+    font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--gold); margin: 0 0 12px;
+  }
+  h1{
+    font-family: var(--font-display); font-weight: 700;
+    font-size: clamp(26px, 4vw, 34px); line-height: 1.2;
+    margin: 0 0 14px; letter-spacing: 0.005em;
+  }
+  .lede{ font-size: 16px; color: var(--ink-soft); line-height: 1.65; margin: 0 0 30px; }
+  h2{
+    font-family: var(--font-display); font-weight: 700; font-size: 19px;
+    margin: 38px 0 14px; color: var(--ink);
+  }
+  p{ font-size: 15px; line-height: 1.75; color: var(--ink); margin: 0 0 16px; }
+  ul, ol{ padding-left: 20px; margin: 0 0 16px; }
+  li{ font-size: 15px; line-height: 1.75; margin-bottom: 8px; }
+  li b{ color: var(--gold); }
+
+  table{ width:100%; border-collapse: collapse; margin: 8px 0 20px; font-size: 14px; }
+  th,td{ text-align:left; padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th{ font-family: var(--font-display); font-size: 12.5px; color: var(--gold); }
+  td{ color: var(--ink-soft); }
+  td b{ color: var(--ink); }
+
+  .notice{
+    background: var(--primary-soft); border: 1.5px solid var(--primary); border-radius: 12px;
+    padding: 14px 18px; font-size: 13.5px; line-height: 1.6; margin: 0 0 24px; color: var(--ink-soft);
+  }
+  .callout{
+    background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+    padding: 18px 20px; margin: 24px 0;
+  }
+  .callout p{ margin: 0; }
+
+  .diagram{
+    background: var(--surface-soft); border: 1px solid var(--border); border-radius: 14px;
+    padding: 20px 18px 14px; margin: 10px 0 26px;
+  }
+  .diagram svg{ display:block; width:100%; height:auto; }
+  .diagram-cap{
+    font-family: var(--font-mono); font-size: 11.5px; color: var(--ink-faint);
+    text-align: center; margin-top: 10px; letter-spacing: 0.02em;
+  }
+  .dtext{ font-family: var(--font-mono); }
+
+  .site-header{
+    background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
+    padding: 6px 16px; margin: 0 0 34px;
+    display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;
+  }
+  .site-header .brand{
+    font-family: var(--font-display); font-weight: 700; font-size: 15px;
+    color: var(--ink); text-decoration: none; letter-spacing: 0.01em; white-space: nowrap; padding: 10px 0;
+  }
+  .site-nav{ display: flex; gap: 2px; flex-wrap: wrap; }
+  .nav-group{ position: relative; }
+  .nav-trigger{
+    font-family: var(--font-mono); font-size: 12.5px; font-weight: 600;
+    letter-spacing: 0.03em; color: var(--ink-soft); background: none; border: none;
+    cursor: pointer; padding: 10px 10px; border-radius: 8px;
+  }
+  .nav-trigger:hover, .nav-group:focus-within .nav-trigger{ color: var(--gold); background: rgba(201,162,75,0.10); }
+  .nav-menu{
+    display: none; position: absolute; top: 100%; right: 0; z-index: 20;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+    padding: 8px; min-width: 220px; box-shadow: 0 12px 28px rgba(0,0,0,0.5);
+  }
+  .nav-group:hover .nav-menu, .nav-group:focus-within .nav-menu{ display: block; }
+  .nav-menu a{
+    display: block; font-family: var(--font-mono); font-size: 12.5px; font-weight: 600;
+    color: var(--ink-soft); text-decoration: none; padding: 8px 10px; border-radius: 6px;
+  }
+  .nav-menu a:hover{ color: var(--gold); background: rgba(201,162,75,0.10); }
+  @media (max-width: 720px){
+    .site-nav{ width: 100%; flex-direction: column; gap: 0; }
+    .nav-group{ width: 100%; }
+    .nav-trigger{ width: 100%; text-align: left; }
+    .nav-menu{ display: block; position: static; box-shadow: none; border: none; background: none; padding: 0 0 6px 14px; min-width: 0; }
+  }
+
+  footer{ margin-top: 50px; font-size: 12px; color: var(--ink-faint); line-height: 1.7; }
+  footer a{ color: var(--gold); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="site-header">
+    <a class="brand" href="/">Onimusha: Way of the Sword</a>
+    <nav class="site-nav">
+      <div class="nav-group">
+        <button type="button" class="nav-trigger">Mechanics</button>
+        <div class="nav-menu">
+          <a href="/combat/">Combat Guide</a>
+          <a href="/weapons/">Weapon Guide</a>
+          <a href="/skills/">Skill Guide</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button type="button" class="nav-trigger">Walkthrough</button>
+        <div class="nav-menu">
+          <a href="/walkthrough/">Quest Walkthrough</a>
+          <a href="/bosses/">Boss Guides</a>
+          <a href="/puzzles/">Puzzle Solutions</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button type="button" class="nav-trigger">World</button>
+        <div class="nav-menu">
+          <a href="/shrines/">Shrine Locations</a>
+          <a href="/items/">Item Locations</a>
+          <a href="/secrets/">Secret Areas</a>
+          <a href="/collectibles/">Collectibles</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <p class="eyebrow">Onimusha: Way of the Sword · World</p>
+  <h1>Shrine Locations: Spirit Mirror Guide</h1>
+  <p class="lede">What the game actually calls a "shrine" is a Spirit Mirror — and it's doing more work than a simple checkpoint. Here's exactly what activating one gets you, and where they're distributed across Kyoto.</p>
+
+  <div class="notice">
+    This guide reflects what's known shortly after launch (September 4, 2026), cross-checked across multiple independent community sources. We're covering distribution by area rather than a full coordinate-by-coordinate list until we've mapped every mirror ourselves.
+  </div>
+
+  <h2>What a Spirit Mirror actually does</h2>
+  <div class="diagram">
+    <svg viewBox="0 0 700 140" xmlns="http://www.w3.org/2000/svg">
+      <rect x="10" y="25" width="215" height="90" rx="10" fill="#1C1815" stroke="#332C26" stroke-width="1.5"/>
+      <text x="117" y="58" text-anchor="middle" class="dtext" font-size="12.5" fill="#EDE6DA" font-weight="700">Save point</text>
+      <text x="117" y="78" text-anchor="middle" class="dtext" font-size="10" fill="#B8ADA0">autosave + 20 manual slots</text>
+
+      <rect x="240" y="25" width="215" height="90" rx="10" fill="#1C1815" stroke="#C9A24B" stroke-width="1.5"/>
+      <text x="347" y="58" text-anchor="middle" class="dtext" font-size="12.5" fill="#EDE6DA" font-weight="700">Fast travel hub</text>
+      <text x="347" y="78" text-anchor="middle" class="dtext" font-size="10" fill="#C9A24B" font-weight="700">unlocks through story</text>
+
+      <rect x="470" y="25" width="220" height="90" rx="10" fill="#1C1815" stroke="#332C26" stroke-width="1.5"/>
+      <text x="580" y="58" text-anchor="middle" class="dtext" font-size="12.5" fill="#EDE6DA" font-weight="700">Upgrade station</text>
+      <text x="580" y="78" text-anchor="middle" class="dtext" font-size="10" fill="#B8ADA0">skills, Gauntlet, cosmetics</text>
+    </svg>
+    <p class="diagram-cap">One location, three functions</p>
+  </div>
+  <p>Interacting with a Spirit Mirror triggers an autosave and gives you access to 20 manual save slots. Fast travel between activated mirrors isn't available immediately — it unlocks a little into the story — and you can't fast travel while enemies are actively engaged with you. On the upgrade side, mirrors are where you spend Red Souls on skills (see our <a href="/skills/">skill guide</a>) and access equipment and cosmetic changes.</p>
+
+  <h2>Mirror distribution by area</h2>
+  <table>
+    <tr><th>Area</th><th>Notes</th></tr>
+    <tr><td><b>East Kyoto</b></td><td>The most mirror coverage — your central hub for frequent return trips</td></tr>
+    <tr><td><b>Kiyomizu-dera Temple</b></td><td>Several mirrors spaced along the long approach route</td></tr>
+    <tr><td><b>Oni Refuge</b></td><td>Two mirrors, one at the north end and one at the south</td></tr>
+    <tr><td><b>Nijo-jo Castle</b></td><td>Several mirrors positioned around side-quest content</td></tr>
+    <tr><td><b>Underground Laboratory</b></td><td>Dedicated points on multiple floors — useful given how vertical this area gets</td></tr>
+    <tr><td><b>Kyoto Imperial Palace</b></td><td>Two mirrors for optional return trips</td></tr>
+    <tr><td><b>Mount Oe</b></td><td>Nine mirrors across four levels — the densest coverage in the game, which tells you something about how large this area is</td></tr>
+  </table>
+  <p>This lines up with the chapter structure in our <a href="/walkthrough/">quest walkthrough</a> — mirror density roughly tracks how sprawling or vertical each area actually is, with Mount Oe (Chapter 5) leading by a wide margin.</p>
+
+  <h2>Practical habits</h2>
+  <ul>
+    <li><b>Activate every mirror you pass</b>, even ones slightly off your current path — the backtracking they save later is worth the short detour now.</li>
+    <li><b>Resting fully heals you, but respawns standard enemies</b> in the surrounding area. Treat that as a downside right after clearing a room, and as a deliberate farming loop when you actually want more fights.</li>
+    <li><b>Grab Oni Vision early</b> if you haven't (see our <a href="/skills/">skill guide</a>) — it reveals collectibles through walls and makes exploring between mirrors far less guesswork-heavy, which matters for our <a href="/collectibles/">collectibles guide</a> and <a href="/secrets/">secret areas guide</a> too.</li>
+  </ul>
+
+  <div class="callout">
+    <p><b>Practical takeaway:</b> don't treat mirrors as purely functional waypoints — activating every one you find as you go is close to free, and Mount Oe specifically punishes anyone who skipped ahead without doing so.</p>
+  </div>
+
+  <h2>Frequently asked questions</h2>
+  <p><b>What are shrines called in-game?</b><br>Spirit Mirrors — save points, fast travel hubs, and upgrade stations combined.</p>
+  <p><b>Is fast travel available from the start?</b><br>No — it unlocks through early story progression, and only works between mirrors you've already activated.</p>
+  <p><b>Is there a downside to resting?</b><br>Yes — it respawns standard enemies in the surrounding area, which can work against or for you depending on what you need.</p>
+
+  <footer>
+    This is an unofficial, fan-made wiki based on early post-launch information and is not affiliated with or endorsed by Capcom. Diagrams are original illustrations, not game assets. Mirror counts and locations may be refined as more of the game is explored. <a href="/">Back to the wiki home →</a>
+  </footer>
+</div>
+</body>
+</html>
