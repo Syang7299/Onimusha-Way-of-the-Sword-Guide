@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>鬼武者 Way of the Sword New Game Plusガイド — 引き継ぎ・リセット要素</title>
+<meta name="description" content="鬼武者 Way of the SwordのNew Game Plusとカルネージ難易度の全解説——何が引き継がれ、何がリセットされるか、始める前の準備まで。">
+<link rel="canonical" href="https://onimushaguides.com/ja/new-game-plus/">
+<link rel="alternate" hreflang="en" href="https://onimushaguides.com/new-game-plus/">
+<link rel="alternate" hreflang="ja" href="https://onimushaguides.com/ja/new-game-plus/">
+<link rel="alternate" hreflang="x-default" href="https://onimushaguides.com/new-game-plus/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="鬼武者 Way of the Sword New Game Plusガイド">
+<meta property="og:description" content="何が引き継がれ、何がリセットされるかを解説。">
+<meta property="og:url" content="https://onimushaguides.com/ja/new-game-plus/">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "鬼武者 Way of the Sword New Game Plusガイド",
+  "description": "何が引き継がれ、何がリセットされるかを解説。",
+  "url": "https://onimushaguides.com/ja/new-game-plus/",
+  "mainEntityOfPage": "https://onimushaguides.com/ja/new-game-plus/",
+  "dateModified": "2026-09-10",
+  "inLanguage": "ja"
+}
+</script>
+<!-- TODO: Google Analytics — add gtag.js snippet here once a GA4 property exists for this site -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #0D0B0A; --surface:#1C1815; --surface-soft:#171412; --border:#332C26;
+    --ink:#EDE6DA; --ink-soft:#B8ADA0; --ink-faint:#7A6F63;
+    --primary:#A81D22; --primary-soft:rgba(168,29,34,0.15);
+    --gold:#C9A24B; --gold-soft: rgba(201,162,75,0.10);
+    --violet: #6E4C93; --violet-soft: rgba(110,76,147,0.14);
+    --font-display:'Shippori Mincho','Georgia',serif;
+    --font-body:'Inter','Hiragino Sans',system-ui,sans-serif;
+    --font-mono:'IBM Plex Mono',ui-monospace,monospace;
+    --bg-alt: radial-gradient(1000px 600px at 88% -8%, rgba(168,29,34,0.20), transparent 62%), radial-gradient(800px 550px at 4% 100%, rgba(201,162,75,0.10), transparent 58%), radial-gradient(700px 450px at 10% 6%, rgba(110,76,147,0.13), transparent 60%);
+  }
+  *{ box-sizing:border-box; }
+  html,body{ margin:0; padding:0; }
+  body{
+    background: var(--bg);
+    background-image: var(--bg-alt);
+    background-attachment: fixed;
+    color: var(--ink);
+    font-family: var(--font-body);
+    padding: 40px 20px 80px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap{ max-width: 760px; margin: 0 auto; }
+  .eyebrow{
+    font-family: var(--font-mono);
+    font-size: 12px; font-weight: 600; letter-spacing: 0.08em;
+    color: var(--gold); margin: 0 0 12px;
+  }
+  h1{
+    font-family: var(--font-display); font-weight: 700;
+    font-size: clamp(24px, 3.6vw, 32px); line-height: 1.4;
+    margin: 0 0 14px; letter-spacing: 0.005em;
+  }
+  .lede{ font-size: 15.5px; color: var(--ink-soft); line-height: 1.85; margin: 0 0 30px; }
+  h2{
+    font-family: var(--font-display); font-weight: 700; font-size: 18px;
+    margin: 38px 0 14px; color: var(--ink);
+  }
+  p{ font-size: 14.5px; line-height: 1.9; color: var(--ink); margin: 0 0 16px; }
+  ul, ol{ padding-left: 20px; margin: 0 0 16px; }
+  li{ font-size: 14.5px; line-height: 1.9; margin-bottom: 8px; }
+  li b{ color: var(--gold); }
+
+  .notice{
+    background: var(--primary-soft); border: 1.5px solid var(--primary); border-radius: 12px;
+    padding: 14px 18px; font-size: 13px; line-height: 1.8; margin: 0 0 24px; color: var(--ink-soft);
+  }
+  .callout{
+    background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+    padding: 18px 20px; margin: 24px 0;
+  }
+  .callout p{ margin: 0; }
+
+  .compare{ display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 8px 0 26px; }
+  @media (max-width: 600px){ .compare{ grid-template-columns: 1fr; } }
+  .compare-col{
+    border-radius: 12px; padding: 16px 18px; border: 1px solid var(--border);
+  }
+  .compare-col.keep{ background: var(--gold-soft); border-color: var(--gold); }
+  .compare-col.reset{ background: var(--primary-soft); border-color: var(--primary); }
+  .compare-col h3{
+    font-family: var(--font-mono); font-size: 11px; font-weight: 700;
+    letter-spacing: 0.04em; margin: 0 0 12px;
+  }
+  .compare-col.keep h3{ color: var(--gold); }
+  .compare-col.reset h3{ color: var(--primary); }
+  .compare-col ul{ margin: 0; padding-left: 18px; }
+  .compare-col li{ font-size: 13px; margin-bottom: 7px; color: var(--ink-soft); }
+  .compare-col li b{ color: var(--ink); }
+
+  .site-header{
+    background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
+    padding: 6px 16px; margin: 0 0 34px;
+    display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;
+  }
+  .site-header .brand{
+    font-family: var(--font-display); font-weight: 700; font-size: 15px;
+    color: var(--ink); text-decoration: none; letter-spacing: 0.01em; white-space: nowrap; padding: 10px 0;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .brand-mark{ color: var(--gold); flex-shrink: 0; }
+  .site-nav{ display: flex; gap: 2px; flex-wrap: wrap; align-items: center; }
+  .nav-group{ position: relative; }
+  .nav-trigger{
+    font-family: var(--font-body); font-size: 13px; font-weight: 600;
+    letter-spacing: 0.02em; color: var(--ink-soft); background: none; border: none;
+    cursor: pointer; padding: 10px 10px; border-radius: 8px;
+  }
+  .nav-trigger:hover, .nav-group:focus-within .nav-trigger{ color: var(--gold); background: rgba(201,162,75,0.10); }
+  .nav-menu{
+    display: none; position: absolute; top: 100%; right: 0; z-index: 20;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+    padding: 8px; min-width: 230px; box-shadow: 0 12px 28px rgba(0,0,0,0.5);
+  }
+  .nav-group:hover .nav-menu, .nav-group:focus-within .nav-menu{ display: block; }
+  .nav-menu a{
+    display: flex; justify-content: space-between; align-items: center; gap: 8px;
+    font-family: var(--font-body); font-size: 13px; font-weight: 600;
+    color: var(--ink-soft); text-decoration: none; padding: 8px 10px; border-radius: 6px;
+  }
+  .nav-menu a:hover{ color: var(--gold); background: rgba(201,162,75,0.10); }
+  .nav-menu .en-tag{
+    font-family: var(--font-mono); font-size: 9.5px; color: var(--ink-faint);
+    border: 1px solid var(--border); border-radius: 999px; padding: 1px 6px; flex-shrink: 0;
+  }
+  .lang-switch{
+    font-family: var(--font-mono); font-size: 11.5px; font-weight: 600;
+    color: var(--ink-faint); text-decoration: none; padding: 9px 11px;
+    border: 1px solid var(--border); border-radius: 8px; white-space: nowrap;
+  }
+  .lang-switch:hover{ color: var(--gold); border-color: var(--gold); }
+  @media (max-width: 720px){
+    .site-nav{ width: 100%; flex-direction: column; gap: 0; align-items: stretch; }
+    .nav-group{ width: 100%; }
+    .nav-trigger{ width: 100%; text-align: left; }
+    .nav-menu{ display: block; position: static; box-shadow: none; border: none; background: none; padding: 0 0 6px 14px; min-width: 0; }
+    .lang-switch{ text-align: center; margin-top: 4px; }
+  }
+
+  footer{ margin-top: 50px; font-size: 12px; color: var(--ink-faint); line-height: 1.8; }
+  footer a{ color: var(--gold); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="site-header">
+    <a class="brand" href="/ja/"><svg class="brand-mark" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5 L15 12.5 L12 21.5 L9 12.5 Z"/><circle cx="12" cy="7.5" r="1.3" fill="currentColor" stroke="none"/></svg>鬼武者 Way of the Sword</a>
+    <nav class="site-nav">
+      <div class="nav-group">
+        <button type="button" class="nav-trigger">システム</button>
+        <div class="nav-menu">
+          <a href="/ja/combat/">戦闘ガイド</a>
+          <a href="/ja/weapons/">武器ガイド</a>
+          <a href="/ja/skills/">スキルガイド</a>
+          <a href="/ja/issen/">一閃徹底解説</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button type="button" class="nav-trigger">攻略</button>
+        <div class="nav-menu">
+          <a href="/ja/walkthrough/">攻略チャート</a>
+          <a href="/ja/bosses/">ボス攻略</a>
+          <a href="/ja/puzzles/">パズル解法</a>
+          <a href="/ja/playtime/">クリア時間</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button type="button" class="nav-trigger">ワールド</button>
+        <div class="nav-menu">
+          <a href="/ja/shrines/">神社の場所</a>
+          <a href="/ja/items/">アイテムの場所</a>
+          <a href="/ja/secrets/">隠しエリア</a>
+          <a href="/ja/collectibles/">収集品</a>
+          <a href="/ja/trophies/">トロフィーガイド</a>
+          <a href="/ja/characters/">キャラクター</a>
+          <a href="/ja/outfits/">衣装・スキン</a>
+          <a href="/ja/new-game-plus/">New Game Plus</a>
+        </div>
+      </div>
+      <a class="lang-switch" href="/new-game-plus/">EN</a>
+    </nav>
+  </div>
+
+  <p class="eyebrow">鬼武者 Way of the Sword・ワールド</p>
+  <h1>New Game Plusガイド</h1>
+  <p class="lede">解放条件は1つだけ、そして失う予定の通貨が1つ、さらに引き継ぎリストは思っているより選択的です。New Game Plusとカルネージ難易度が実際に何をするのかを解説します。</p>
+
+  <div class="notice">
+    <b>翻訳について：</b> このガイドは2026年9月4日の発売直後に判明した情報を、複数の独立した情報源で照合してまとめています。以下のリストは2つの詳しい英語版の情報源がほぼ一致した内容です。1点だけ一致していないのが<b>衣装の引き継ぎ</b>です——ある情報源は「未確認」としており、別の情報源は同じ記事内で衣装を「引き継ぐ」リストと「リセットされる」リストの両方に載せてしまう内部矛盾を起こしています。どちらが正しいか判断せず、衣装の引き継ぎは本当に未確定として扱っています。また最高難易度の名称についても、英語版の複数の情報源は「Carnage」と伝えていますが、確認した日本語の個人ブログ1件は「鬼殺」と異なる名称を挙げていました——<a href="/ja/trophies/">トロフィーガイド</a>と同じく、断定せずカタカナ表記の「カルネージ」を暫定的に使用しています。
+  </div>
+
+  <h2>解放方法</h2>
+  <p>ストーリーを1度クリアするだけです。それが唯一の条件で、特定のエンディングやサブコンテンツの完了、難易度の選択は必要ありません。エンドロールが流れると、New Game Plusと<b>カルネージ</b>難易度(ストーリー・アクションの上位に位置する最高難易度)の両方が解放されます。Story/Action/Carnageの全体像は<a href="/ja/trophies/">トロフィーガイド</a>と、カルネージがプラチナにとって重要な理由を参照してください。</p>
+
+  <h2>引き継がれるもの vs リセットされるもの</h2>
+  <div class="compare">
+    <div class="compare-col keep">
+      <h3>引き継がれる</h3>
+      <ul>
+        <li><b>能力</b>——眼覚醒を含む、強化済みの基本能力・特殊能力</li>
+        <li><b>鬼の力の覚醒</b>——眼・腕・脚</li>
+        <li><b>お守り</b>とその強化段階</li>
+        <li><b>鬼灯袋</b>とその強化段階</li>
+        <li><b>鬼ノ武具</b>——解放状態は維持される(強化段階は維持されない、右参照)</li>
+        <li>アイテムと供物</li>
+        <li><b>幻魔手記(仮訳)</b>の収集状況</li>
+        <li><b>狛犬</b>の救出状況</li>
+        <li>再戦ボスの解放・クリア状況</li>
+      </ul>
+    </div>
+    <div class="compare-col reset">
+      <h3>リセットされる</h3>
+      <ul>
+        <li><b>赤魂</b>——ゼロに戻る。先に使い切っておくこと</li>
+        <li>太刀・篭手の<b>強化段階</b></li>
+        <li>強化素材——絹布、玉鋼は再収集が必要</li>
+        <li>鬼の弓——初期段階に戻る</li>
+        <li>都の怪異(仮訳)の進行状況</li>
+        <li>縁の依頼(仮訳)の進行状況</li>
+        <li>破魔鏡の解放・アクセス状況</li>
+        <li>ストーリー・サブミッションの進行状況</li>
+      </ul>
+    </div>
+  </div>
+  <p>鬼ノ武具については特に触れておく価値があります——New Game Plusに入っても全7種を解放済みの状態は維持されます(<a href="/ja/weapons/">武器ガイド</a>参照)が、個々の強化段階は他の装備と一緒にリセットされます。再び探しに行く必要はなく、強化をやり直すだけです。</p>
+
+  <h2>始める前に</h2>
+  <ul>
+    <li><b>持っている赤魂は全て使い切りましょう。</b> 引き継がれないため、最終ミッションに向かう前に貯め込む理由はありません。</li>
+    <li><b>気にかけているものは先に集め終えましょう。</b> 幻魔手記(仮訳)・狛犬・縁の依頼(仮訳)は上記の通り達成状況が引き継がれますが、破魔鏡や都の怪異(仮訳)の進行状況は引き継がれません——優先順位は<a href="/ja/collectibles/">収集品ガイド</a>を参照してください。</li>
+    <li><b>カルネージは本気の選択です。</b> New Game Plusの周回でカルネージを選ぶと、ストーリーとアクションのように気軽に易しい難易度へ戻ることはできません。</li>
+  </ul>
+
+  <div class="callout">
+    <p><b>実践のポイント：</b> カルネージでのNew Game Plusは「何もない状態から始める」周回というより「もう一度キャラクターを育て直すが、今度は速い」周回です——能力・お守り・鬼灯袋・収集の進行状況があるので完全にゼロからではありませんが、太刀と篭手の強さはリセットされるので、カルネージにいきなり無双状態で挑めるとは思わないでください。プラチナが目標なら<a href="/ja/trophies/">トロフィーガイド</a>のロードマップと合わせて計画しましょう。</p>
+  </div>
+
+  <h2>よくある質問</h2>
+  <p><b>New Game Plusはどう解放する？</b><br>ストーリーを1度クリアするだけです——他の条件はありません。</p>
+  <p><b>赤魂は引き継がれる？</b><br>いいえ——ゼロに戻ります。最終ミッションの前に使い切りましょう。</p>
+  <p><b>太刀・篭手の強化は引き継がれる？</b><br>いいえ——強化段階はリセットされますが、鬼ノ武具は解放済みの状態が維持されます。</p>
+
+  <footer>
+    これは非公式のファンメイドWikiであり、発売直後の情報を基にしています。Capcomとは一切関係ありません。引き継ぎ内容は今後の検証で更新される可能性があります。<a href="/ja/">Wikiトップへ戻る →</a>
+  </footer>
+</div>
+</body>
+</html>

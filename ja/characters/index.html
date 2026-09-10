@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>鬼武者 Way of the Sword キャラクターガイド — 登場人物紹介</title>
+<meta name="description" content="鬼武者 Way of the Swordの登場人物紹介——武蔵、その仲間、ライバル、そして鬼の篭手を巡る謎の人物まで。">
+<link rel="canonical" href="https://onimushaguides.com/ja/characters/">
+<link rel="alternate" hreflang="en" href="https://onimushaguides.com/characters/">
+<link rel="alternate" hreflang="ja" href="https://onimushaguides.com/ja/characters/">
+<link rel="alternate" hreflang="x-default" href="https://onimushaguides.com/characters/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="鬼武者 Way of the Sword キャラクターガイド">
+<meta property="og:description" content="武蔵、その仲間、ライバル、鬼の篭手を巡る謎の人物を紹介。">
+<meta property="og:url" content="https://onimushaguides.com/ja/characters/">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "鬼武者 Way of the Sword キャラクターガイド",
+  "description": "武蔵、その仲間、ライバル、鬼の篭手を巡る謎の人物を紹介。",
+  "url": "https://onimushaguides.com/ja/characters/",
+  "mainEntityOfPage": "https://onimushaguides.com/ja/characters/",
+  "dateModified": "2026-09-10",
+  "inLanguage": "ja"
+}
+</script>
+<!-- TODO: Google Analytics — add gtag.js snippet here once a GA4 property exists for this site -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #0D0B0A; --surface:#1C1815; --surface-soft:#171412; --border:#332C26;
+    --ink:#EDE6DA; --ink-soft:#B8ADA0; --ink-faint:#7A6F63;
+    --primary:#A81D22; --primary-soft:rgba(168,29,34,0.15);
+    --gold:#C9A24B; --gold-soft: rgba(201,162,75,0.10);
+    --violet: #6E4C93; --violet-soft: rgba(110,76,147,0.14);
+    --font-display:'Shippori Mincho','Georgia',serif;
+    --font-body:'Inter','Hiragino Sans',system-ui,sans-serif;
+    --font-mono:'IBM Plex Mono',ui-monospace,monospace;
+    --bg-alt: radial-gradient(1000px 600px at 88% -8%, rgba(168,29,34,0.20), transparent 62%), radial-gradient(800px 550px at 4% 100%, rgba(201,162,75,0.10), transparent 58%), radial-gradient(700px 450px at 10% 6%, rgba(110,76,147,0.13), transparent 60%);
+  }
+  *{ box-sizing:border-box; }
+  html,body{ margin:0; padding:0; }
+  body{
+    background: var(--bg);
+    background-image: var(--bg-alt);
+    background-attachment: fixed;
+    color: var(--ink);
+    font-family: var(--font-body);
+    padding: 40px 20px 80px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap{ max-width: 760px; margin: 0 auto; }
+  .eyebrow{
+    font-family: var(--font-mono);
+    font-size: 12px; font-weight: 600; letter-spacing: 0.08em;
+    color: var(--gold); margin: 0 0 12px;
+  }
+  h1{
+    font-family: var(--font-display); font-weight: 700;
+    font-size: clamp(24px, 3.6vw, 32px); line-height: 1.4;
+    margin: 0 0 14px; letter-spacing: 0.005em;
+  }
+  .lede{ font-size: 15.5px; color: var(--ink-soft); line-height: 1.85; margin: 0 0 30px; }
+  h2{
+    font-family: var(--font-display); font-weight: 700; font-size: 18px;
+    margin: 38px 0 14px; color: var(--ink);
+  }
+  h3{
+    font-family: var(--font-display); font-weight: 700; font-size: 15.5px;
+    margin: 0 0 6px; color: var(--gold);
+  }
+  p{ font-size: 14.5px; line-height: 1.9; color: var(--ink); margin: 0 0 16px; }
+
+  .notice{
+    background: var(--primary-soft); border: 1.5px solid var(--primary); border-radius: 12px;
+    padding: 14px 18px; font-size: 13px; line-height: 1.8; margin: 0 0 24px; color: var(--ink-soft);
+  }
+  .callout{
+    background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+    padding: 18px 20px; margin: 24px 0;
+  }
+  .callout p{ margin: 0; }
+
+  .char-card{
+    background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+    padding: 18px 20px; margin-bottom: 14px;
+  }
+  .char-card h3{ font-size: 16.5px; margin: 0 0 4px; }
+  .char-card .role{
+    font-family: var(--font-mono); font-size: 10.5px; color: var(--ink-faint);
+    letter-spacing: 0.03em; margin-bottom: 10px;
+  }
+  .char-card p{ font-size: 13.5px; color: var(--ink-soft); margin: 0 0 8px; }
+  .char-card p:last-child{ margin-bottom: 0; }
+  .char-card.rival{ border-color: var(--primary); }
+  .char-card.rival .role{ color: var(--primary); }
+
+  .site-header{
+    background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
+    padding: 6px 16px; margin: 0 0 34px;
+    display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;
+  }
+  .site-header .brand{
+    font-family: var(--font-display); font-weight: 700; font-size: 15px;
+    color: var(--ink); text-decoration: none; letter-spacing: 0.01em; white-space: nowrap; padding: 10px 0;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .brand-mark{ color: var(--gold); flex-shrink: 0; }
+  .site-nav{ display: flex; gap: 2px; flex-wrap: wrap; align-items: center; }
+  .nav-group{ position: relative; }
+  .nav-trigger{
+    font-family: var(--font-body); font-size: 13px; font-weight: 600;
+    letter-spacing: 0.02em; color: var(--ink-soft); background: none; border: none;
+    cursor: pointer; padding: 10px 10px; border-radius: 8px;
+  }
+  .nav-trigger:hover, .nav-group:focus-within .nav-trigger{ color: var(--gold); background: rgba(201,162,75,0.10); }
+  .nav-menu{
+    display: none; position: absolute; top: 100%; right: 0; z-index: 20;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+    padding: 8px; min-width: 230px; box-shadow: 0 12px 28px rgba(0,0,0,0.5);
+  }
+  .nav-group:hover .nav-menu, .nav-group:focus-within .nav-menu{ display: block; }
+  .nav-menu a{
+    display: flex; justify-content: space-between; align-items: center; gap: 8px;
+    font-family: var(--font-body); font-size: 13px; font-weight: 600;
+    color: var(--ink-soft); text-decoration: none; padding: 8px 10px; border-radius: 6px;
+  }
+  .nav-menu a:hover{ color: var(--gold); background: rgba(201,162,75,0.10); }
+  .nav-menu .en-tag{
+    font-family: var(--font-mono); font-size: 9.5px; color: var(--ink-faint);
+    border: 1px solid var(--border); border-radius: 999px; padding: 1px 6px; flex-shrink: 0;
+  }
+  .lang-switch{
+    font-family: var(--font-mono); font-size: 11.5px; font-weight: 600;
+    color: var(--ink-faint); text-decoration: none; padding: 9px 11px;
+    border: 1px solid var(--border); border-radius: 8px; white-space: nowrap;
+  }
+  .lang-switch:hover{ color: var(--gold); border-color: var(--gold); }
+  @media (max-width: 720px){
+    .site-nav{ width: 100%; flex-direction: column; gap: 0; align-items: stretch; }
+    .nav-group{ width: 100%; }
+    .nav-trigger{ width: 100%; text-align: left; }
+    .nav-menu{ display: block; position: static; box-shadow: none; border: none; background: none; padding: 0 0 6px 14px; min-width: 0; }
+    .lang-switch{ text-align: center; margin-top: 4px; }
+  }
+
+  footer{ margin-top: 50px; font-size: 12px; color: var(--ink-faint); line-height: 1.8; }
+  footer a{ color: var(--gold); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="site-header">
+    <a class="brand" href="/ja/"><svg class="brand-mark" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5 L15 12.5 L12 21.5 L9 12.5 Z"/><circle cx="12" cy="7.5" r="1.3" fill="currentColor" stroke="none"/></svg>鬼武者 Way of the Sword</a>
+    <nav class="site-nav">
+      <div class="nav-group">
+        <button type="button" class="nav-trigger">システム</button>
+        <div class="nav-menu">
+          <a href="/ja/combat/">戦闘ガイド</a>
+          <a href="/ja/weapons/">武器ガイド</a>
+          <a href="/ja/skills/">スキルガイド</a>
+          <a href="/ja/issen/">一閃徹底解説</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button type="button" class="nav-trigger">攻略</button>
+        <div class="nav-menu">
+          <a href="/ja/walkthrough/">攻略チャート</a>
+          <a href="/ja/bosses/">ボス攻略</a>
+          <a href="/ja/puzzles/">パズル解法</a>
+          <a href="/ja/playtime/">クリア時間</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button type="button" class="nav-trigger">ワールド</button>
+        <div class="nav-menu">
+          <a href="/ja/shrines/">神社の場所</a>
+          <a href="/ja/items/">アイテムの場所</a>
+          <a href="/ja/secrets/">隠しエリア</a>
+          <a href="/ja/collectibles/">収集品</a>
+          <a href="/ja/trophies/">トロフィーガイド</a>
+          <a href="/ja/characters/">キャラクター</a>
+          <a href="/ja/outfits/">衣装・スキン</a>
+          <a href="/ja/new-game-plus/">New Game Plus</a>
+        </div>
+      </div>
+      <a class="lang-switch" href="/characters/">EN</a>
+    </nav>
+  </div>
+
+  <p class="eyebrow">鬼武者 Way of the Sword・ワールド</p>
+  <h1>キャラクターガイド</h1>
+  <p class="lede">武蔵、彼を取り巻く人々、そして何度も立ちはだかるライバル。ここではキャスト全員と、それぞれが物語でどんな役割を果たすかを紹介します。</p>
+
+  <div class="notice">
+    <b>翻訳について：</b> このガイドは2026年9月4日の発売直後に判明した情報を、複数の独立した情報源で照合してまとめています。物語上の名前付きキャラクターのみを扱っており、幻魔の雑魚敵図鑑は<a href="/ja/bosses/">ボス攻略</a>と重複しないよう、あえてこのページでは扱っていません。なお、ある情報源には「静御前」という別の仲間キャラクターも記載されていましたが、別の情報源では確認できず、当サイトの他のページ(衣装ガイドの「静」名義のDLC衣装)との対応関係もまだ検証できていないため、今回のキャラクター一覧には含めていません。
+  </div>
+
+  <h2>宮本武蔵</h2>
+  <div class="char-card">
+    <h3>宮本武蔵</h3>
+    <div class="role">主人公</div>
+    <p>名優・三船敏郎をモデルにした武蔵は、「剣の道」の極みを求めて江戸時代初期の京都にやってきます。太刀を2つの構えで使い分け、鬼ノ武具の1つである対の太刀「双刀【二天】」も併用します——常時二刀流というわけではなく、一部の初期の紹介記事が伝えていた内容とは異なります。</p>
+    <p>物語が進むにつれて鬼の篭手を手に入れ、<a href="/ja/combat/">弾き・受け流し・一閃の戦闘システム</a>と<a href="/ja/skills/">能力ツリー</a>を解放していきます。</p>
+  </div>
+
+  <h2>仲間</h2>
+  <div class="char-card">
+    <h3>鬼の女(仮訳)</h3>
+    <div class="role">篭手の精霊</div>
+    <p>武蔵の鬼の篭手に宿る謎の存在です。武蔵を導く役割を果たし、力が強まるにつれてその篭手に何ができるのかを教えてくれます。</p>
+  </div>
+  <div class="char-card">
+    <h3>小野篁</h3>
+    <div class="role">篭手を持つ老練の武人</div>
+    <p>自身も鬼の篭手を持つ、年老いてなお恐るべき武人です。師のような役割を果たしており、第7章で話しかけることで最終ミッションと後戻りできないポイントを引き起こすのも彼です。</p>
+  </div>
+  <div class="char-card">
+    <h3>出雲阿国</h3>
+    <div class="role">かぶき者の踊り手</div>
+    <p>自らも幻魔と戦う力を求める、名高いかぶき者の踊り手です。小野篁のもとで修行しており、武人階級とは異なる視点を物語に加えています。</p>
+  </div>
+
+  <h2>ライバル</h2>
+  <div class="char-card rival">
+    <h3>佐々木巌流</h3>
+    <div class="role">好敵手</div>
+    <p>武蔵にとって中心的なライバル——技巧に優れた剣士で、武蔵との決闘は幻魔の脅威とは別に、個人的な因縁として描かれます。巌流は<a href="/ja/bosses/">全18体のボス</a>の1体でもあり、物語を通して複数回戦うことになります。</p>
+  </div>
+  <div class="char-card rival">
+    <h3>謎の白衣の男(仮訳)</h3>
+    <div class="role">目的不明</div>
+    <p>武蔵と巌流の両方に鬼の篭手を与えたとされる謎の人物です。その目的や正体は物語の大部分を通して明らかにされません。このキャラクターは他のキャラクターに比べて情報源間の一致が少ないため、確定情報というより参考程度に扱ってください。</p>
+  </div>
+
+  <div class="callout">
+    <p><b>実践のポイント：</b> キャストは大人数ではなく、少数精鋭です——名前付きキャラクター5人がほぼ全ての物語を担っています。誰かの戦闘面(巌流のボス戦、武蔵自身の戦闘スタイルなど)を知りたい場合は<a href="/ja/bosses/">ボス攻略</a>と<a href="/ja/combat/">戦闘ガイド</a>で詳しく解説しています——このページは「誰が誰か」を扱うもので、「どう戦うか」はそちらを参照してください。</p>
+  </div>
+
+  <h2>よくある質問</h2>
+  <p><b>主人公は誰？</b><br>宮本武蔵、三船敏郎をモデルにしています。</p>
+  <p><b>武蔵に鬼の篭手を与えたのは誰？</b><br>謎の白衣の男(仮訳)と呼ばれる人物で、佐々木巌流にも与えたと報告されています。</p>
+  <p><b>佐々木巌流はボス戦になる？</b><br>はい——名前付きキャラクターであると同時に、繰り返し登場するボスでもあります。<a href="/ja/bosses/">ボス攻略</a>を参照してください。</p>
+
+  <footer>
+    これは非公式のファンメイドWikiであり、発売直後の情報を基にしています。Capcomとは一切関係ありません。キャラクター情報は今後の検証で更新される可能性があります。<a href="/ja/">Wikiトップへ戻る →</a>
+  </footer>
+</div>
+</body>
+</html>

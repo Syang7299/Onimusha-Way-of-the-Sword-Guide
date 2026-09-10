@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>鬼武者 Way of the Sword 衣装・太刀スキンガイド — 全解放条件</title>
+<meta name="description" content="鬼武者 Way of the Swordの衣装・羽織・太刀スキン解説——全ての入手方法と、デラックス版限定コンテンツの区別まで。">
+<link rel="canonical" href="https://onimushaguides.com/ja/outfits/">
+<link rel="alternate" hreflang="en" href="https://onimushaguides.com/outfits/">
+<link rel="alternate" hreflang="ja" href="https://onimushaguides.com/ja/outfits/">
+<link rel="alternate" hreflang="x-default" href="https://onimushaguides.com/outfits/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="鬼武者 Way of the Sword 衣装・太刀スキンガイド">
+<meta property="og:description" content="全ての衣装・太刀スキンの入手方法を解説。">
+<meta property="og:url" content="https://onimushaguides.com/ja/outfits/">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "鬼武者 Way of the Sword 衣装・太刀スキンガイド",
+  "description": "全ての衣装・太刀スキンの入手方法を解説。",
+  "url": "https://onimushaguides.com/ja/outfits/",
+  "mainEntityOfPage": "https://onimushaguides.com/ja/outfits/",
+  "dateModified": "2026-09-10",
+  "inLanguage": "ja"
+}
+</script>
+<!-- TODO: Google Analytics — add gtag.js snippet here once a GA4 property exists for this site -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #0D0B0A; --surface:#1C1815; --surface-soft:#171412; --border:#332C26;
+    --ink:#EDE6DA; --ink-soft:#B8ADA0; --ink-faint:#7A6F63;
+    --primary:#A81D22; --primary-soft:rgba(168,29,34,0.15);
+    --gold:#C9A24B; --gold-soft: rgba(201,162,75,0.10);
+    --violet: #6E4C93; --violet-soft: rgba(110,76,147,0.14);
+    --font-display:'Shippori Mincho','Georgia',serif;
+    --font-body:'Inter','Hiragino Sans',system-ui,sans-serif;
+    --font-mono:'IBM Plex Mono',ui-monospace,monospace;
+    --bg-alt: radial-gradient(1000px 600px at 88% -8%, rgba(168,29,34,0.20), transparent 62%), radial-gradient(800px 550px at 4% 100%, rgba(201,162,75,0.10), transparent 58%), radial-gradient(700px 450px at 10% 6%, rgba(110,76,147,0.13), transparent 60%);
+  }
+  *{ box-sizing:border-box; }
+  html,body{ margin:0; padding:0; }
+  body{
+    background: var(--bg);
+    background-image: var(--bg-alt);
+    background-attachment: fixed;
+    color: var(--ink);
+    font-family: var(--font-body);
+    padding: 40px 20px 80px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap{ max-width: 760px; margin: 0 auto; }
+  .eyebrow{
+    font-family: var(--font-mono);
+    font-size: 12px; font-weight: 600; letter-spacing: 0.08em;
+    color: var(--gold); margin: 0 0 12px;
+  }
+  h1{
+    font-family: var(--font-display); font-weight: 700;
+    font-size: clamp(24px, 3.6vw, 32px); line-height: 1.4;
+    margin: 0 0 14px; letter-spacing: 0.005em;
+  }
+  .lede{ font-size: 15.5px; color: var(--ink-soft); line-height: 1.85; margin: 0 0 30px; }
+  h2{
+    font-family: var(--font-display); font-weight: 700; font-size: 18px;
+    margin: 38px 0 14px; color: var(--ink);
+  }
+  p{ font-size: 14.5px; line-height: 1.9; color: var(--ink); margin: 0 0 16px; }
+  ul, ol{ padding-left: 20px; margin: 0 0 16px; }
+  li{ font-size: 14.5px; line-height: 1.9; margin-bottom: 8px; }
+  li b{ color: var(--gold); }
+
+  table{ width:100%; border-collapse: collapse; margin: 8px 0 20px; font-size: 13.5px; }
+  th,td{ text-align:left; padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th{ font-family: var(--font-display); font-size: 12.5px; color: var(--gold); }
+  td{ color: var(--ink-soft); }
+  td b{ color: var(--ink); }
+
+  .notice{
+    background: var(--primary-soft); border: 1.5px solid var(--primary); border-radius: 12px;
+    padding: 14px 18px; font-size: 13px; line-height: 1.8; margin: 0 0 24px; color: var(--ink-soft);
+  }
+  .callout{
+    background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+    padding: 18px 20px; margin: 24px 0;
+  }
+  .callout p{ margin: 0; }
+
+  .diagram{
+    background: var(--surface-soft); border: 1px solid var(--border); border-radius: 14px;
+    padding: 20px 18px 14px; margin: 10px 0 26px;
+  }
+  .diagram svg{ display:block; width:100%; height:auto; }
+  .diagram-cap{
+    font-family: var(--font-mono); font-size: 11px; color: var(--ink-faint);
+    text-align: center; margin-top: 10px; letter-spacing: 0.01em;
+  }
+  .dtext{ font-family: var(--font-body); }
+
+  .dlc-tag{
+    display:inline-block; font-family: var(--font-mono); font-size: 9.5px; font-weight: 700;
+    letter-spacing: 0.03em; color: var(--violet);
+    background: var(--violet-soft); border-radius: 999px; padding: 2px 9px;
+  }
+
+  .site-header{
+    background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
+    padding: 6px 16px; margin: 0 0 34px;
+    display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;
+  }
+  .site-header .brand{
+    font-family: var(--font-display); font-weight: 700; font-size: 15px;
+    color: var(--ink); text-decoration: none; letter-spacing: 0.01em; white-space: nowrap; padding: 10px 0;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .brand-mark{ color: var(--gold); flex-shrink: 0; }
+  .site-nav{ display: flex; gap: 2px; flex-wrap: wrap; align-items: center; }
+  .nav-group{ position: relative; }
+  .nav-trigger{
+    font-family: var(--font-body); font-size: 13px; font-weight: 600;
+    letter-spacing: 0.02em; color: var(--ink-soft); background: none; border: none;
+    cursor: pointer; padding: 10px 10px; border-radius: 8px;
+  }
+  .nav-trigger:hover, .nav-group:focus-within .nav-trigger{ color: var(--gold); background: rgba(201,162,75,0.10); }
+  .nav-menu{
+    display: none; position: absolute; top: 100%; right: 0; z-index: 20;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+    padding: 8px; min-width: 230px; box-shadow: 0 12px 28px rgba(0,0,0,0.5);
+  }
+  .nav-group:hover .nav-menu, .nav-group:focus-within .nav-menu{ display: block; }
+  .nav-menu a{
+    display: flex; justify-content: space-between; align-items: center; gap: 8px;
+    font-family: var(--font-body); font-size: 13px; font-weight: 600;
+    color: var(--ink-soft); text-decoration: none; padding: 8px 10px; border-radius: 6px;
+  }
+  .nav-menu a:hover{ color: var(--gold); background: rgba(201,162,75,0.10); }
+  .nav-menu .en-tag{
+    font-family: var(--font-mono); font-size: 9.5px; color: var(--ink-faint);
+    border: 1px solid var(--border); border-radius: 999px; padding: 1px 6px; flex-shrink: 0;
+  }
+  .lang-switch{
+    font-family: var(--font-mono); font-size: 11.5px; font-weight: 600;
+    color: var(--ink-faint); text-decoration: none; padding: 9px 11px;
+    border: 1px solid var(--border); border-radius: 8px; white-space: nowrap;
+  }
+  .lang-switch:hover{ color: var(--gold); border-color: var(--gold); }
+  @media (max-width: 720px){
+    .site-nav{ width: 100%; flex-direction: column; gap: 0; align-items: stretch; }
+    .nav-group{ width: 100%; }
+    .nav-trigger{ width: 100%; text-align: left; }
+    .nav-menu{ display: block; position: static; box-shadow: none; border: none; background: none; padding: 0 0 6px 14px; min-width: 0; }
+    .lang-switch{ text-align: center; margin-top: 4px; }
+  }
+
+  footer{ margin-top: 50px; font-size: 12px; color: var(--ink-faint); line-height: 1.8; }
+  footer a{ color: var(--gold); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="site-header">
+    <a class="brand" href="/ja/"><svg class="brand-mark" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5 L15 12.5 L12 21.5 L9 12.5 Z"/><circle cx="12" cy="7.5" r="1.3" fill="currentColor" stroke="none"/></svg>鬼武者 Way of the Sword</a>
+    <nav class="site-nav">
+      <div class="nav-group">
+        <button type="button" class="nav-trigger">システム</button>
+        <div class="nav-menu">
+          <a href="/ja/combat/">戦闘ガイド</a>
+          <a href="/ja/weapons/">武器ガイド</a>
+          <a href="/ja/skills/">スキルガイド</a>
+          <a href="/ja/issen/">一閃徹底解説</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button type="button" class="nav-trigger">攻略</button>
+        <div class="nav-menu">
+          <a href="/ja/walkthrough/">攻略チャート</a>
+          <a href="/ja/bosses/">ボス攻略</a>
+          <a href="/ja/puzzles/">パズル解法</a>
+          <a href="/ja/playtime/">クリア時間</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button type="button" class="nav-trigger">ワールド</button>
+        <div class="nav-menu">
+          <a href="/ja/shrines/">神社の場所</a>
+          <a href="/ja/items/">アイテムの場所</a>
+          <a href="/ja/secrets/">隠しエリア</a>
+          <a href="/ja/collectibles/">収集品</a>
+          <a href="/ja/trophies/">トロフィーガイド</a>
+          <a href="/ja/characters/">キャラクター</a>
+          <a href="/ja/outfits/">衣装・スキン</a>
+          <a href="/ja/new-game-plus/">New Game Plus</a>
+        </div>
+      </div>
+      <a class="lang-switch" href="/outfits/">EN</a>
+    </nav>
+  </div>
+
+  <p class="eyebrow">鬼武者 Way of the Sword・ワールド</p>
+  <h1>衣装・太刀スキンガイド</h1>
+  <p class="lede">見た目だけの変化で、ステータスには一切影響しません。全ての衣装・羽織・太刀スキンと、それぞれの実際の入手方法を紹介します。</p>
+
+  <div class="notice">
+    <b>翻訳について：</b> このガイドは2026年9月4日の発売直後に判明した情報を、複数の独立した情報源で照合してまとめています。基本の衣装と全6種の太刀スキンの入手条件は裏付けが取れています——太刀スキンの狛犬必要数は2つの独立した情報源で完全に一致しました。羽織のラインナップはやや確定度が低く、複数の情報源が「物語で入手できる羽織が約7種、デラックス版限定が3種」という点では一致していますが、どのストーリーミッションがどの羽織を解放するかまでは一致していないため、無理に対応関係を決めつけていません。
+  </div>
+
+  <h2>衣装</h2>
+  <table>
+    <tr><th>衣装</th><th>入手方法</th></tr>
+    <tr><td><b>普段着</b></td><td>武蔵の初期衣装——解放不要</td></tr>
+    <tr><td><b>襷掛け(仮訳)</b></td><td>以前の見た目を再現。「清水の舞台が整う」クリア後に解放(この時点で見た目変更メニューも開く)</td></tr>
+    <tr><td><b>パンダ衣装</b></td><td>エンディングを迎えると自動解放——狛犬もサブクエストも特定の難易度も不要</td></tr>
+    <tr><td><b>ワタルくん衣装</b></td><td>パンダ衣装と同じく、エンディングで自動解放、他の条件なし</td></tr>
+    <tr><td><b>紅の甲冑(仮訳)</b> <span class="dlc-tag">デラックス版限定</span></td><td>デラックスキットに同梱——通常プレイでは入手不可</td></tr>
+  </table>
+  <p>ストーリー進行と全ての再戦ボスクリアでさらに衣装が解放され、それをカルネージ難易度で繰り返すと報告によればさらに増えるとされています——<a href="/ja/trophies/">トロフィーガイド</a>のカルネージ難易度の解説も参照してください。</p>
+
+  <h2>太刀スキン</h2>
+  <div class="diagram">
+    <svg viewBox="0 0 700 190" xmlns="http://www.w3.org/2000/svg">
+      <text x="10" y="30" class="dtext" font-size="10.5" fill="#EDE6DA">桜姫</text>
+      <rect x="150" y="16" width="83" height="20" rx="5" fill="#A81D22" fill-opacity="0.5"/>
+      <text x="240" y="30" class="dtext" font-size="10" fill="#B8ADA0">狛犬6体</text>
+
+      <text x="10" y="60" class="dtext" font-size="10.5" fill="#EDE6DA">獅子王</text>
+      <rect x="150" y="46" width="166" height="20" rx="5" fill="#A81D22" fill-opacity="0.5"/>
+      <text x="323" y="60" class="dtext" font-size="10" fill="#B8ADA0">12</text>
+
+      <text x="10" y="90" class="dtext" font-size="10.5" fill="#EDE6DA">妙業</text>
+      <rect x="150" y="76" width="249" height="20" rx="5" fill="#A81D22" fill-opacity="0.5"/>
+      <text x="406" y="90" class="dtext" font-size="10" fill="#B8ADA0">18</text>
+
+      <text x="10" y="120" class="dtext" font-size="10.5" fill="#EDE6DA">裏切</text>
+      <rect x="150" y="106" width="332" height="20" rx="5" fill="#A81D22" fill-opacity="0.5"/>
+      <text x="489" y="120" class="dtext" font-size="10" fill="#B8ADA0">24</text>
+
+      <text x="10" y="150" class="dtext" font-size="10.5" fill="#EDE6DA">月影</text>
+      <rect x="150" y="136" width="415" height="20" rx="5" fill="#A81D22" fill-opacity="0.5"/>
+      <text x="572" y="150" class="dtext" font-size="10" fill="#B8ADA0">30</text>
+
+      <text x="10" y="180" class="dtext" font-size="10.5" fill="#EDE6DA">鬼哭</text>
+      <rect x="150" y="166" width="498" height="20" rx="5" fill="#C9A24B" fill-opacity="0.55"/>
+      <text x="655" y="180" class="dtext" font-size="10" fill="#B8ADA0">36</text>
+    </svg>
+    <p class="diagram-cap">狛犬6体ごとにスキン1つ、全36体で最後の太刀が手に入る</p>
+  </div>
+  <p>全6種の太刀スキンは<a href="/ja/collectibles/">狛犬</a>の救出で入手できます——6体ごとに1つ、全36体で6種すべて揃います。武蔵の唯一の太刀の見た目を変えるだけの純粋なスキンです(太刀そのものの仕組みは<a href="/ja/weapons/">武器ガイド</a>参照)。ステータスやモーションには一切影響しません。</p>
+  <table>
+    <tr><th>スキン</th><th>必要な狛犬の数</th></tr>
+    <tr><td><b>桜姫</b></td><td>6</td></tr>
+    <tr><td><b>獅子王</b></td><td>12</td></tr>
+    <tr><td><b>妙業</b></td><td>18</td></tr>
+    <tr><td><b>裏切</b></td><td>24</td></tr>
+    <tr><td><b>月影</b></td><td>30</td></tr>
+    <tr><td><b>鬼哭</b></td><td>36(全て)</td></tr>
+  </table>
+
+  <h2>羽織</h2>
+  <p>羽織(装束の上に着る上着)はストーリーミッションをクリアするごとに追加解放されます——報告によれば物語進行で入手できるものが約7種あり、それとは別にデラックス版限定が3種あります。名前と条件を確認できた2つは以下の通りです。</p>
+  <ul>
+    <li><b>縦縞の羽織(仮訳)</b>——羅掌願との戦闘を突破し、「叶わぬ願い(仮訳)」をクリアする。</li>
+    <li><b>天鵞絨の羽織(仮訳)</b>——「何かが影に潜む(仮訳)」をクリアする。<a href="/ja/puzzles/">仮面パズル</a>の解法もこのミッションに紐づいています。</li>
+  </ul>
+  <p>「阿国のかぶき踊り(仮訳)」「山の鬼(仮訳)」「氷月の光の中で(仮訳)」といったミッションでも羽織が解放されると報告されていますが、標準装備の「篭手隠し羽織(仮訳)」も含め、どのミッションがどの羽織に対応するかは情報源間で一致していません。無理な対応付けはせず、そのまま提示しています。</p>
+
+  <h2>デラックス版限定コンテンツ</h2>
+  <p>これらは通常プレイでは入手できません——デラックス版またはプレミアムデラックス版に同梱されており、破魔鏡で受け取ります。</p>
+  <ul>
+    <li>紅の甲冑(仮訳)の衣装と紅蓮の篭手(仮訳)</li>
+    <li>業火・雲苦い(仮訳)・月光(仮訳)の羽織</li>
+    <li>竹とパンダ・炎龍・白獅子などを含む、7種の限定太刀スキン</li>
+    <li>出雲阿国など仲間キャラクターの追加衣装</li>
+  </ul>
+
+  <div class="callout">
+    <p><b>実践のポイント：</b> デラックス版でない場合、紅の甲冑やデラックス版限定の羽織・スキンは探しても見つかりません——単純に入手不可能です。それ以外は全てストーリーを進めて<a href="/ja/collectibles/">狛犬</a>を救出することで手に入り、取り逃しもありません——安全網の仕組みは<a href="/ja/trophies/">トロフィーガイド</a>を参照してください。</p>
+  </div>
+
+  <h2>よくある質問</h2>
+  <p><b>パンダ衣装はどう解放する？</b><br>自動解放です——エンディングを迎えると、他の条件なしで手に入ります。</p>
+  <p><b>太刀スキンはいくつある？</b><br>6種——狛犬6体ごとに1つ。純粋な見た目のみの変化です。</p>
+  <p><b>デラックス版限定の衣装はある？</b><br>あります——紅の甲冑や一部の羽織・太刀スキンは有料版限定で、通常プレイでは入手できません。</p>
+
+  <footer>
+    これは非公式のファンメイドWikiであり、発売直後の情報を基にしています。Capcomとは一切関係ありません。解放条件は今後の検証で更新される可能性があります。<a href="/ja/">Wikiトップへ戻る →</a>
+  </footer>
+</div>
+</body>
+</html>

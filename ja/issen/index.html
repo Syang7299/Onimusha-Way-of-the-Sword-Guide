@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>鬼武者 Way of the Sword 一閃徹底解説 — タイミング・連鎖一閃・ディフレクト一閃</title>
+<meta name="description" content="鬼武者 Way of the Swordの一閃を徹底解説——白閃光のタイミングの合図、True IssenとDeflect Issen、Break Issenの違い、連鎖一閃の仕組みまで。">
+<link rel="canonical" href="https://onimushaguides.com/ja/issen/">
+<link rel="alternate" hreflang="en" href="https://onimushaguides.com/issen/">
+<link rel="alternate" hreflang="ja" href="https://onimushaguides.com/ja/issen/">
+<link rel="alternate" hreflang="x-default" href="https://onimushaguides.com/issen/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="鬼武者 Way of the Sword 一閃徹底解説">
+<meta property="og:description" content="タイミングの合図、3つの一閃の種類、連鎖の仕組みを解説。">
+<meta property="og:url" content="https://onimushaguides.com/ja/issen/">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "鬼武者 Way of the Sword 一閃徹底解説",
+  "description": "タイミングの合図、3つの一閃の種類、連鎖の仕組みを解説。",
+  "url": "https://onimushaguides.com/ja/issen/",
+  "mainEntityOfPage": "https://onimushaguides.com/ja/issen/",
+  "dateModified": "2026-09-10",
+  "inLanguage": "ja"
+}
+</script>
+<!-- TODO: Google Analytics — add gtag.js snippet here once a GA4 property exists for this site -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #0D0B0A; --surface:#1C1815; --surface-soft:#171412; --border:#332C26;
+    --ink:#EDE6DA; --ink-soft:#B8ADA0; --ink-faint:#7A6F63;
+    --primary:#A81D22; --primary-soft:rgba(168,29,34,0.15);
+    --gold:#C9A24B; --gold-soft: rgba(201,162,75,0.10);
+    --violet: #6E4C93; --violet-soft: rgba(110,76,147,0.14);
+    --font-display:'Shippori Mincho','Georgia',serif;
+    --font-body:'Inter','Hiragino Sans',system-ui,sans-serif;
+    --font-mono:'IBM Plex Mono',ui-monospace,monospace;
+    --bg-alt: radial-gradient(1000px 600px at 88% -8%, rgba(168,29,34,0.20), transparent 62%), radial-gradient(800px 550px at 4% 100%, rgba(201,162,75,0.10), transparent 58%), radial-gradient(700px 450px at 10% 6%, rgba(110,76,147,0.13), transparent 60%);
+  }
+  *{ box-sizing:border-box; }
+  html,body{ margin:0; padding:0; }
+  body{
+    background: var(--bg);
+    background-image: var(--bg-alt);
+    background-attachment: fixed;
+    color: var(--ink);
+    font-family: var(--font-body);
+    padding: 40px 20px 80px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap{ max-width: 760px; margin: 0 auto; }
+  .eyebrow{
+    font-family: var(--font-mono);
+    font-size: 12px; font-weight: 600; letter-spacing: 0.08em;
+    color: var(--gold); margin: 0 0 12px;
+  }
+  h1{
+    font-family: var(--font-display); font-weight: 700;
+    font-size: clamp(24px, 3.6vw, 32px); line-height: 1.4;
+    margin: 0 0 14px; letter-spacing: 0.005em;
+  }
+  .lede{ font-size: 15.5px; color: var(--ink-soft); line-height: 1.85; margin: 0 0 30px; }
+  h2{
+    font-family: var(--font-display); font-weight: 700; font-size: 18px;
+    margin: 38px 0 14px; color: var(--ink);
+  }
+  h3{
+    font-family: var(--font-display); font-weight: 700; font-size: 15.5px;
+    margin: 0 0 6px; color: var(--gold);
+  }
+  p{ font-size: 14.5px; line-height: 1.9; color: var(--ink); margin: 0 0 16px; }
+
+  .notice{
+    background: var(--primary-soft); border: 1.5px solid var(--primary); border-radius: 12px;
+    padding: 14px 18px; font-size: 13px; line-height: 1.8; margin: 0 0 24px; color: var(--ink-soft);
+  }
+  .callout{
+    background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+    padding: 18px 20px; margin: 24px 0;
+  }
+  .callout p{ margin: 0; }
+
+  .diagram{
+    background: var(--surface-soft); border: 1px solid var(--border); border-radius: 14px;
+    padding: 20px 18px 14px; margin: 10px 0 26px;
+  }
+  .diagram svg{ display:block; width:100%; height:auto; }
+  .diagram-cap{
+    font-family: var(--font-mono); font-size: 11px; color: var(--ink-faint);
+    text-align: center; margin-top: 10px; letter-spacing: 0.01em;
+  }
+  .dtext{ font-family: var(--font-body); }
+
+  .move-card{
+    background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+    padding: 16px 20px; margin-bottom: 14px;
+  }
+  .move-card h3{ font-size: 15.5px; margin: 0 0 8px; }
+  .move-card p{ margin: 0 0 8px; font-size: 13.5px; color: var(--ink-soft); }
+  .move-card p:last-child{ margin-bottom: 0; }
+
+  .site-header{
+    background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
+    padding: 6px 16px; margin: 0 0 34px;
+    display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;
+  }
+  .site-header .brand{
+    font-family: var(--font-display); font-weight: 700; font-size: 15px;
+    color: var(--ink); text-decoration: none; letter-spacing: 0.01em; white-space: nowrap; padding: 10px 0;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .brand-mark{ color: var(--gold); flex-shrink: 0; }
+  .site-nav{ display: flex; gap: 2px; flex-wrap: wrap; align-items: center; }
+  .nav-group{ position: relative; }
+  .nav-trigger{
+    font-family: var(--font-body); font-size: 13px; font-weight: 600;
+    letter-spacing: 0.02em; color: var(--ink-soft); background: none; border: none;
+    cursor: pointer; padding: 10px 10px; border-radius: 8px;
+  }
+  .nav-trigger:hover, .nav-group:focus-within .nav-trigger{ color: var(--gold); background: rgba(201,162,75,0.10); }
+  .nav-menu{
+    display: none; position: absolute; top: 100%; right: 0; z-index: 20;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+    padding: 8px; min-width: 230px; box-shadow: 0 12px 28px rgba(0,0,0,0.5);
+  }
+  .nav-group:hover .nav-menu, .nav-group:focus-within .nav-menu{ display: block; }
+  .nav-menu a{
+    display: flex; justify-content: space-between; align-items: center; gap: 8px;
+    font-family: var(--font-body); font-size: 13px; font-weight: 600;
+    color: var(--ink-soft); text-decoration: none; padding: 8px 10px; border-radius: 6px;
+  }
+  .nav-menu a:hover{ color: var(--gold); background: rgba(201,162,75,0.10); }
+  .nav-menu .en-tag{
+    font-family: var(--font-mono); font-size: 9.5px; color: var(--ink-faint);
+    border: 1px solid var(--border); border-radius: 999px; padding: 1px 6px; flex-shrink: 0;
+  }
+  .lang-switch{
+    font-family: var(--font-mono); font-size: 11.5px; font-weight: 600;
+    color: var(--ink-faint); text-decoration: none; padding: 9px 11px;
+    border: 1px solid var(--border); border-radius: 8px; white-space: nowrap;
+  }
+  .lang-switch:hover{ color: var(--gold); border-color: var(--gold); }
+  @media (max-width: 720px){
+    .site-nav{ width: 100%; flex-direction: column; gap: 0; align-items: stretch; }
+    .nav-group{ width: 100%; }
+    .nav-trigger{ width: 100%; text-align: left; }
+    .nav-menu{ display: block; position: static; box-shadow: none; border: none; background: none; padding: 0 0 6px 14px; min-width: 0; }
+    .lang-switch{ text-align: center; margin-top: 4px; }
+  }
+
+  footer{ margin-top: 50px; font-size: 12px; color: var(--ink-faint); line-height: 1.8; }
+  footer a{ color: var(--gold); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="site-header">
+    <a class="brand" href="/ja/"><svg class="brand-mark" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5 L15 12.5 L12 21.5 L9 12.5 Z"/><circle cx="12" cy="7.5" r="1.3" fill="currentColor" stroke="none"/></svg>鬼武者 Way of the Sword</a>
+    <nav class="site-nav">
+      <div class="nav-group">
+        <button type="button" class="nav-trigger">システム</button>
+        <div class="nav-menu">
+          <a href="/ja/combat/">戦闘ガイド</a>
+          <a href="/ja/weapons/">武器ガイド</a>
+          <a href="/ja/skills/">スキルガイド</a>
+          <a href="/ja/issen/">一閃徹底解説</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button type="button" class="nav-trigger">攻略</button>
+        <div class="nav-menu">
+          <a href="/ja/walkthrough/">攻略チャート</a>
+          <a href="/ja/bosses/">ボス攻略</a>
+          <a href="/ja/puzzles/">パズル解法</a>
+          <a href="/ja/playtime/">クリア時間</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button type="button" class="nav-trigger">ワールド</button>
+        <div class="nav-menu">
+          <a href="/ja/shrines/">神社の場所</a>
+          <a href="/ja/items/">アイテムの場所</a>
+          <a href="/ja/secrets/">隠しエリア</a>
+          <a href="/ja/collectibles/">収集品</a>
+          <a href="/ja/trophies/">トロフィーガイド</a>
+          <a href="/ja/characters/">キャラクター</a>
+          <a href="/ja/outfits/">衣装・スキン</a>
+          <a href="/ja/new-game-plus/">New Game Plus</a>
+        </div>
+      </div>
+      <a class="lang-switch" href="/issen/">EN</a>
+    </nav>
+  </div>
+
+  <p class="eyebrow">鬼武者 Way of the Sword・システム</p>
+  <h1>一閃徹底解説：タイミング・種類・連鎖</h1>
+  <p class="lede"><a href="/ja/combat/">戦闘ガイド</a>では一閃を4つの選択肢の1つとして扱いました。このページはその続きです——実際に見るべき合図、発動させる3つの方法、そして連鎖について確実に分かっていることと、まだ未確定のことを解説します。</p>
+
+  <div class="notice">
+    このガイドは2026年9月4日の発売直後に判明した情報を、複数の独立した情報源で照合してまとめています。一部のファンサイトは「Light」「Normal」「Hard」「Oni」といった難易度名に紐づけたミリ秒・フレーム単位の正確なタイミングを公開していますが、これらは当サイトが検証済みの難易度名(Story、Action、Carnage——<a href="/ja/trophies/">トロフィーガイド</a>参照)と一致しません。信頼できる情報源でこれらの数字を裏付けられなかったため、このゲームの実際の難易度システムに当てはまらない可能性のある数字を掲載するより、あえて省いています。
+  </div>
+
+  <h2>実際に見るべき合図</h2>
+  <p>一閃は反応型の技ではありません——被弾に反応するのではなく、敵の攻撃が着地する前に自分から攻め込みます。目印は視覚的なもので、敵の武器が攻撃モーションの途中で白く発光します。その閃光が受付時間の始まりで、その少し後に画面全体が白く光ると、受付時間は終了しており手遅れです。</p>
+  <p>大型で動きの遅い敵には、音の合図も追加されます——攻撃が近づくにつれて音量が増す風切り音で、攻撃が着地する瞬間にピークに達します。乱戦で視覚的な閃光を追いにくい時は、この音の合図が頼りになります。</p>
+
+  <div class="diagram">
+    <svg viewBox="0 0 700 140" xmlns="http://www.w3.org/2000/svg">
+      <rect x="10" y="45" width="150" height="50" rx="8" fill="#1C1815" stroke="#332C26" stroke-width="1.5"/>
+      <text x="85" y="68" text-anchor="middle" class="dtext" font-size="11" fill="#EDE6DA" font-weight="700">予備動作</text>
+      <text x="85" y="84" text-anchor="middle" class="dtext" font-size="9" fill="#B8ADA0">見る、動かない</text>
+
+      <rect x="190" y="45" width="150" height="50" rx="8" fill="#1C1815" stroke="#C9A24B" stroke-width="1.5"/>
+      <text x="265" y="68" text-anchor="middle" class="dtext" font-size="11" fill="#C9A24B" font-weight="700">白い閃光</text>
+      <text x="265" y="84" text-anchor="middle" class="dtext" font-size="9" fill="#B8ADA0">今、攻撃を押す</text>
+
+      <rect x="370" y="45" width="150" height="50" rx="8" fill="#1C1815" stroke="#A81D22" stroke-width="1.5"/>
+      <text x="445" y="68" text-anchor="middle" class="dtext" font-size="11" fill="#A81D22" font-weight="700">画面全体の閃光</text>
+      <text x="445" y="84" text-anchor="middle" class="dtext" font-size="9" fill="#B8ADA0">受付時間終了</text>
+
+      <rect x="550" y="45" width="150" height="50" rx="8" fill="#1C1815" stroke="#332C26" stroke-width="1.5"/>
+      <text x="625" y="68" text-anchor="middle" class="dtext" font-size="11" fill="#EDE6DA" font-weight="700">着弾</text>
+      <text x="625" y="84" text-anchor="middle" class="dtext" font-size="9" fill="#B8ADA0">もう一閃は手遅れ</text>
+
+      <line x1="160" y1="70" x2="188" y2="70" stroke="#7A6F63" stroke-width="2"/>
+      <line x1="340" y1="70" x2="368" y2="70" stroke="#7A6F63" stroke-width="2"/>
+      <line x1="520" y1="70" x2="548" y2="70" stroke="#7A6F63" stroke-width="2"/>
+    </svg>
+    <p class="diagram-cap">一閃1回のリズム：白い閃光→入力→受付時間終了</p>
+  </div>
+
+  <h2>3つの種類</h2>
+  <div class="move-card">
+    <h3>True Issen(素の一閃)</h3>
+    <p>白い閃光の瞬間に、攻撃だけを単独で押します。最もハイリスク——外すと回避もガードも一切なく敵の攻撃を丸ごと受けます。最もハイリターン——雑魚にはワンパン、ボスには大ダメージ。</p>
+  </div>
+  <div class="move-card">
+    <h3>Deflect Issen(ディフレクト一閃)</h3>
+    <p>同じ受付時間でガードを維持し、閃光(または追っている合図によってはガード周りの光の輪)が見えたら攻撃を押します。タイミングを覚える上でより安全な方法です——外しても被弾ではなく通常のガードになるため、丸腰でTrue Issenに挑む前の最初の一歩としておすすめです。</p>
+  </div>
+  <div class="move-card">
+    <h3>Break Issen(崩し一閃)</h3>
+    <p>発動条件が全く異なります——<a href="/ja/combat/">弾きや受け流し</a>の圧力で敵の力動がゼロになった時に発動し、タイミングの読みは関係ありません。通常の敵には単純な処刑技、ボス戦ではダメージ重視かソウル報酬重視かを選べます。力動への圧力がどう積み重なるかは<a href="/ja/combat/">戦闘ガイド</a>を参照してください。</p>
+  </div>
+
+  <h2>連鎖一閃</h2>
+  <p>集団の敵に一閃を決めると、続けて発動できる受付時間が開きます——同じ白閃光のリズムが繰り返され、それを決めるとカウンターが範囲内の次の敵に移ります。視覚・音の合図は単体の場合と同じで、実践的なアドバイスも同様です——次のターゲットを先読みせず、今の閃光にだけ反応しましょう。</p>
+  <div class="notice">
+    <b>未解決の食い違い：</b> 連鎖できる上限について情報源が一致していません。ある情報源は最大5体連続としています。別の情報源は具体的に「最初の1体に加えて2体、合計3体まで」延長できるとしており、少量の力の石(仮訳)投資で早期に解放されると主張しています——力の石の仕組み全般は<a href="/ja/skills/">スキルガイド</a>を参照。現時点ではどちらが正確か判断できないため、この件が確定するまでは特定の連鎖数を前提にした立ち回りは避けてください。
+  </div>
+
+  <div class="callout">
+    <p><b>実践のポイント：</b> まずDeflect Issenで一閃を覚えましょう——同じリズムで、外しても許容されます——白い閃光を反射的に読めるようになったらガード入力を外しましょう。連鎖一閃は別の技を練習するのではなく、同じ技の繰り返しです。1回の一閃を安定して決められるなら、連鎖のコツは次の閃光の前に怯まないことだけです。</p>
+  </div>
+
+  <h2>よくある質問</h2>
+  <p><b>一閃のタイミングの合図は？</b><br>攻撃が着地する直前に敵の武器が白く発光します——その閃光で攻撃を押しましょう。</p>
+  <p><b>True IssenとDeflect Issenの違いは？</b><br>True Issenは攻撃のみでハイリスク、Deflect Issenは先にガード入力を加えるため、外しても被弾ではなく安全なガードになります。</p>
+  <p><b>連鎖一閃は何体まで決められる？</b><br>未確定です——情報源によって最大5体説と合計3体説で一致していません。</p>
+
+  <footer>
+    これは非公式のファンメイドWikiであり、発売直後の情報を基にしています。Capcomとは一切関係ありません。タイミングの詳細は今後の検証で更新される可能性があります。<a href="/ja/">Wikiトップへ戻る →</a>
+  </footer>
+</div>
+</body>
+</html>
