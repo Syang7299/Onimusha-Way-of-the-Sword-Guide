@@ -1,30 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Onimusha: Way of the Sword Wiki - Guides, Bosses & Walkthrough</title>
-<meta name="description" content="Unofficial wiki for Onimusha: Way of the Sword — combat, weapons, skills, boss guides, quest walkthroughs, shrine and item locations, secrets, and collectibles.">
-<link rel="canonical" href="https://onimushaguides.com/">
+<title>鬼武者 Way of the Sword 攻略Wiki - 攻略・ボス・ストーリーチャート</title>
+<meta name="description" content="鬼武者 Way of the Swordの非公式攻略Wiki——戦闘・武器・スキル、ボス攻略、ストーリー攻略チャート、神社・アイテムの場所、収集要素まで。">
+<link rel="canonical" href="https://onimushaguides.com/ja/">
 <link rel="alternate" hreflang="en" href="https://onimushaguides.com/">
 <link rel="alternate" hreflang="ja" href="https://onimushaguides.com/ja/">
 <link rel="alternate" hreflang="x-default" href="https://onimushaguides.com/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Onimusha: Way of the Sword Wiki">
-<meta property="og:description" content="Unofficial wiki for Onimusha: Way of the Sword — combat, weapons, skills, bosses, walkthroughs, locations, and collectibles.">
-<meta property="og:url" content="https://onimushaguides.com/">
+<meta property="og:title" content="鬼武者 Way of the Sword 攻略Wiki">
+<meta property="og:description" content="鬼武者 Way of the Swordの非公式攻略Wiki——戦闘、武器、スキル、ボス、攻略チャート、収集要素まで。">
+<meta property="og:url" content="https://onimushaguides.com/ja/">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "name": "Onimusha: Way of the Sword Wiki",
-  "url": "https://onimushaguides.com/",
-  "description": "Unofficial fan wiki for Onimusha: Way of the Sword, covering combat, weapons, skills, bosses, walkthroughs, locations, and collectibles."
+  "name": "鬼武者 Way of the Sword 攻略Wiki",
+  "url": "https://onimushaguides.com/ja/",
+  "description": "鬼武者 Way of the Swordの非公式ファンWiki。戦闘、武器、スキル、ボス、攻略チャート、収集要素を解説。"
 }
 </script>
 <!-- TODO: Google Analytics — add gtag.js snippet here once a GA4 property exists for this site -->
-<!-- TODO: Google AdSense — add once the site has enough traffic/history to apply -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
@@ -45,7 +44,7 @@
     --violet: #6E4C93;
     --violet-soft: rgba(110,76,147,0.14);
     --font-display: 'Shippori Mincho', 'Georgia', serif;
-    --font-body: 'Inter', system-ui, sans-serif;
+    --font-body: 'Inter', 'Hiragino Sans', system-ui, sans-serif;
     --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
   }
 
@@ -75,25 +74,30 @@
     display: flex; align-items: center; gap: 8px;
   }
   .brand-mark{ color: var(--gold); flex-shrink: 0; }
-  .site-nav{ display: flex; gap: 2px; flex-wrap: wrap; }
+  .site-nav{ display: flex; gap: 2px; flex-wrap: wrap; align-items: center; }
   .nav-group{ position: relative; }
   .nav-trigger{
-    font-family: var(--font-mono); font-size: 12.5px; font-weight: 600;
-    letter-spacing: 0.03em; color: var(--ink-soft); background: none; border: none;
+    font-family: var(--font-body); font-size: 13px; font-weight: 600;
+    letter-spacing: 0.02em; color: var(--ink-soft); background: none; border: none;
     cursor: pointer; padding: 10px 10px; border-radius: 8px;
   }
   .nav-trigger:hover, .nav-group:focus-within .nav-trigger{ color: var(--gold); background: rgba(201,162,75,0.10); }
   .nav-menu{
     display: none; position: absolute; top: 100%; right: 0; z-index: 20;
     background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
-    padding: 8px; min-width: 220px; box-shadow: 0 12px 28px rgba(0,0,0,0.5);
+    padding: 8px; min-width: 230px; box-shadow: 0 12px 28px rgba(0,0,0,0.5);
   }
   .nav-group:hover .nav-menu, .nav-group:focus-within .nav-menu{ display: block; }
   .nav-menu a{
-    display: block; font-family: var(--font-mono); font-size: 12.5px; font-weight: 600;
+    display: flex; justify-content: space-between; align-items: center; gap: 8px;
+    font-family: var(--font-body); font-size: 13px; font-weight: 600;
     color: var(--ink-soft); text-decoration: none; padding: 8px 10px; border-radius: 6px;
   }
   .nav-menu a:hover{ color: var(--gold); background: rgba(201,162,75,0.10); }
+  .nav-menu .en-tag{
+    font-family: var(--font-mono); font-size: 9.5px; color: var(--ink-faint);
+    border: 1px solid var(--border); border-radius: 999px; padding: 1px 6px; flex-shrink: 0;
+  }
   .lang-switch{
     font-family: var(--font-mono); font-size: 11.5px; font-weight: 600;
     color: var(--ink-faint); text-decoration: none; padding: 9px 11px;
@@ -101,10 +105,11 @@
   }
   .lang-switch:hover{ color: var(--gold); border-color: var(--gold); }
   @media (max-width: 720px){
-    .site-nav{ width: 100%; flex-direction: column; gap: 0; }
+    .site-nav{ width: 100%; flex-direction: column; gap: 0; align-items: stretch; }
     .nav-group{ width: 100%; }
     .nav-trigger{ width: 100%; text-align: left; }
     .nav-menu{ display: block; position: static; box-shadow: none; border: none; background: none; padding: 0 0 6px 14px; min-width: 0; }
+    .lang-switch{ text-align: center; margin-top: 4px; }
   }
 
   .hero-wrap{ position: relative; margin-bottom: 34px; }
@@ -117,36 +122,36 @@
   header.hero{ position: relative; z-index: 1; max-width: 720px; }
   .eyebrow{
     font-family: var(--font-mono);
-    font-size: 12px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase;
+    font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
     color: var(--gold); margin: 0 0 12px;
   }
   h1{
     font-family: var(--font-display);
     font-weight: 700;
-    font-size: clamp(32px, 4.5vw, 46px);
+    font-size: clamp(28px, 4.2vw, 42px);
     color: var(--ink);
     margin: 0 0 14px;
     letter-spacing: 0.01em;
-    line-height: 1.15;
+    line-height: 1.3;
   }
   header.hero p{
     color: var(--ink-soft);
-    font-size: 15.5px;
-    line-height: 1.7;
+    font-size: 15px;
+    line-height: 1.85;
     margin: 0;
     max-width: 640px;
   }
 
   .fact-row{ display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
   .fact-pill{
-    font-family: var(--font-mono); font-size: 12px; font-weight: 600;
+    font-family: var(--font-body); font-size: 12.5px; font-weight: 600;
     color: var(--ink-soft); background: var(--surface); border: 1px solid var(--border);
     border-radius: 999px; padding: 7px 14px;
   }
   .fact-pill b{ color: var(--gold); font-weight: 600; }
 
   .section-title{
-    font-family: var(--font-display); font-size: 22px; font-weight: 700;
+    font-family: var(--font-display); font-size: 21px; font-weight: 700;
     color: var(--ink); margin: 46px 0 18px; letter-spacing: 0.01em;
   }
 
@@ -156,9 +161,9 @@
     margin: 0 0 16px; padding-bottom: 10px; border-bottom: 1px solid var(--border);
   }
   .guide-section-head h3{
-    font-family: var(--font-display); font-size: 17px; font-weight: 700; color: var(--ink); margin: 0;
+    font-family: var(--font-display); font-size: 16px; font-weight: 700; color: var(--ink); margin: 0;
   }
-  .guide-section-head p{ font-family: var(--font-mono); font-size: 12px; color: var(--ink-faint); margin: 0; }
+  .guide-section-head p{ font-family: var(--font-body); font-size: 12.5px; color: var(--ink-faint); margin: 0; }
   .guide-section--world .guide-section-head h3{ color: var(--gold); }
   .guide-section--walkthrough .guide-section-head h3{ color: var(--violet); }
 
@@ -181,64 +186,67 @@
   .guide-section--world .icon{ background: var(--gold-soft); color: var(--gold); }
   .guide-card .icon svg{ width: 18px; height: 18px; }
   .guide-card .tag{
-    font-family: var(--font-mono); font-size: 10.5px; font-weight: 700; letter-spacing: 0.06em;
-    text-transform: uppercase; color: var(--primary); margin-bottom: 10px; display: block;
+    font-family: var(--font-mono); font-size: 10px; font-weight: 700; letter-spacing: 0.04em;
+    color: var(--primary); margin-bottom: 10px; display: flex; align-items: center; gap: 8px;
   }
   .guide-section--walkthrough .tag{ color: var(--violet); }
   .guide-section--world .tag{ color: var(--gold); }
-  .guide-card h3{ font-family: var(--font-display); font-size: 18px; color: var(--ink); margin: 0 0 8px; }
-  .guide-card p{ font-size: 13.5px; color: var(--ink-soft); line-height: 1.6; margin: 0; }
-  .guide-card.soon{ opacity: 0.5; pointer-events: none; }
+  .tag .en-tag{
+    font-family: var(--font-mono); font-size: 9.5px; color: var(--ink-faint); font-weight: 600;
+    border: 1px solid var(--border); border-radius: 999px; padding: 1px 7px;
+  }
+  .guide-card h3{ font-family: var(--font-display); font-size: 17px; color: var(--ink); margin: 0 0 8px; }
+  .guide-card p{ font-size: 13px; color: var(--ink-soft); line-height: 1.7; margin: 0; }
 
   .about{
     background: var(--surface-soft); border: 1px solid var(--border); border-radius: 14px;
-    padding: 22px 24px; margin-top: 40px; font-size: 13.5px; color: var(--ink-soft); line-height: 1.75;
+    padding: 22px 24px; margin-top: 40px; font-size: 13.5px; color: var(--ink-soft); line-height: 1.85;
   }
   .about b{ color: var(--ink); }
 
   footer{
     max-width: 1060px; margin: 30px auto 0; font-size: 12px; color: var(--ink-faint);
-    text-align: center; line-height: 1.7;
+    text-align: center; line-height: 1.8;
   }
 </style>
 </head>
 <body>
 <div class="wrap">
   <div class="site-header">
-    <a class="brand" href="/"><svg class="brand-mark" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5 L15 12.5 L12 21.5 L9 12.5 Z"/><circle cx="12" cy="7.5" r="1.3" fill="currentColor" stroke="none"/></svg>Onimusha: Way of the Sword</a>
+    <a class="brand" href="/ja/"><svg class="brand-mark" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5 L15 12.5 L12 21.5 L9 12.5 Z"/><circle cx="12" cy="7.5" r="1.3" fill="currentColor" stroke="none"/></svg>鬼武者 Way of the Sword</a>
     <nav class="site-nav">
       <div class="nav-group">
-        <button type="button" class="nav-trigger">Mechanics</button>
+        <button type="button" class="nav-trigger">システム</button>
         <div class="nav-menu">
-          <a href="/combat/">Combat Guide</a>
-          <a href="/weapons/">Weapon Guide</a>
-          <a href="/skills/">Skill Guide</a>
-          <a href="/issen/">Issen Deep Dive</a>
+          <a href="/ja/combat/">戦闘ガイド</a>
+          <a href="/weapons/">武器ガイド <span class="en-tag">EN</span></a>
+          <a href="/skills/">スキルガイド <span class="en-tag">EN</span></a>
+          <a href="/issen/">一閃徹底解説 <span class="en-tag">EN</span></a>
         </div>
       </div>
       <div class="nav-group">
-        <button type="button" class="nav-trigger">Walkthrough</button>
+        <button type="button" class="nav-trigger">攻略</button>
         <div class="nav-menu">
-          <a href="/walkthrough/">Quest Walkthrough</a>
-          <a href="/bosses/">Boss Guides</a>
-          <a href="/puzzles/">Puzzle Solutions</a>
-          <a href="/playtime/">How Long to Beat</a>
+          <a href="/ja/walkthrough/">攻略チャート</a>
+          <a href="/ja/bosses/">ボス攻略</a>
+          <a href="/puzzles/">パズル解法 <span class="en-tag">EN</span></a>
+          <a href="/playtime/">クリア時間 <span class="en-tag">EN</span></a>
         </div>
       </div>
       <div class="nav-group">
-        <button type="button" class="nav-trigger">World</button>
+        <button type="button" class="nav-trigger">ワールド</button>
         <div class="nav-menu">
-          <a href="/shrines/">Shrine Locations</a>
-          <a href="/items/">Item Locations</a>
-          <a href="/secrets/">Secret Areas</a>
-          <a href="/collectibles/">Collectibles</a>
-          <a href="/trophies/">Trophy Guide</a>
-          <a href="/characters/">Characters</a>
-          <a href="/outfits/">Outfits &amp; Skins</a>
-          <a href="/new-game-plus/">New Game Plus</a>
+          <a href="/shrines/">神社の場所 <span class="en-tag">EN</span></a>
+          <a href="/items/">アイテムの場所 <span class="en-tag">EN</span></a>
+          <a href="/secrets/">隠しエリア <span class="en-tag">EN</span></a>
+          <a href="/collectibles/">収集品 <span class="en-tag">EN</span></a>
+          <a href="/trophies/">トロフィーガイド <span class="en-tag">EN</span></a>
+          <a href="/characters/">キャラクター <span class="en-tag">EN</span></a>
+          <a href="/outfits/">衣装・スキン <span class="en-tag">EN</span></a>
+          <a href="/new-game-plus/">New Game Plus <span class="en-tag">EN</span></a>
         </div>
       </div>
-      <a class="lang-switch" href="/ja/">日本語</a>
+      <a class="lang-switch" href="/">EN</a>
     </nav>
   </div>
 
@@ -272,148 +280,148 @@
       </svg>
     </div>
     <header class="hero">
-      <p class="eyebrow">Unofficial Wiki · Capcom</p>
-      <h1>Onimusha: Way of the Sword</h1>
-      <p>A complete wiki for Capcom's return to the Onimusha series — combat and Issen counters, weapon and skill guides, boss strategies, full quest walkthroughs, and every shrine, item, and secret hidden across Malice-twisted Kyoto.</p>
+      <p class="eyebrow">非公式Wiki・Capcom</p>
+      <h1>鬼武者 Way of the Sword</h1>
+      <p>Capcom最新作『鬼武者 Way of the Sword』の非公式攻略Wiki。戦闘と一閃カウンター、武器・スキルガイド、ボス攻略、全ストーリー攻略チャート、そして瘴気に侵された京都に隠された神社・アイテム・秘密の全てを解説します。</p>
       <div class="fact-row">
-        <div class="fact-pill">Released <b>Sept 4, 2026</b></div>
-        <div class="fact-pill">PS5 · Xbox Series X|S · PC · Switch 2</div>
-        <div class="fact-pill">Developer &amp; Publisher <b>Capcom</b></div>
-        <div class="fact-pill">Protagonist <b>Miyamoto Musashi</b></div>
+        <div class="fact-pill">発売日 <b>2026年9月4日</b></div>
+        <div class="fact-pill">PS5・Xbox Series X|S・PC・Switch 2</div>
+        <div class="fact-pill">開発・発売 <b>Capcom</b></div>
+        <div class="fact-pill">主人公 <b>宮本武蔵</b></div>
       </div>
     </header>
   </div>
 
-  <p class="section-title">Guides</p>
+  <p class="section-title">攻略ガイド一覧</p>
 
   <div class="guide-section">
     <div class="guide-section-head">
-      <h3>Mechanics</h3>
-      <p>How combat, weapons, and skills actually work.</p>
+      <h3>システム</h3>
+      <p>戦闘・武器・スキルの仕組み</p>
     </div>
     <div class="guide-grid">
-      <a class="guide-card" href="/combat/">
+      <a class="guide-card" href="/ja/combat/">
         <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="18" x2="17" y2="7"/><line x1="14" y1="4" x2="20" y2="10"/><line x1="4" y1="20" x2="7" y2="17"/></svg></span>
-        <span class="tag">Core Mechanic</span>
-        <h3>Combat Guide</h3>
-        <p>Parry, Issen counters, Blaze, and how Musashi's defense-first combat actually rewards aggression.</p>
+        <span class="tag">中核システム</span>
+        <h3>戦闘ガイド</h3>
+        <p>弾き、一閃カウンター、ブレイズ——受け身重視の戦闘がなぜ攻めを後押しするのかを解説。</p>
       </a>
       <a class="guide-card" href="/weapons/">
         <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 L15 14 L12 21 L9 14 Z"/></svg></span>
-        <span class="tag">Core Mechanic</span>
-        <h3>Weapon Guide</h3>
-        <p>The katana's two stances, the bow, all seven Oni Armaments, and the Soul economy that powers them.</p>
+        <span class="tag">中核システム <span class="en-tag">EN</span></span>
+        <h3>武器ガイド</h3>
+        <p>太刀の二つの構え、弓、全7種の鬼ノ武具、それらを支える魂の経済を解説。</p>
       </a>
       <a class="guide-card" href="/skills/">
         <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/><line x1="12" y1="7" x2="12" y2="12"/><line x1="12" y1="12" x2="6" y2="16"/><line x1="12" y1="12" x2="18" y2="16"/></svg></span>
-        <span class="tag">Core Mechanic</span>
-        <h3>Skill Guide</h3>
-        <p>Basic and Special skills, Gauntlet upgrades, Oni Awakening, and where to spend your first Souls.</p>
+        <span class="tag">中核システム <span class="en-tag">EN</span></span>
+        <h3>スキルガイド</h3>
+        <p>基本・特殊スキル、鬼の籠手の強化、完全覚醒、最初の魂の使い道を解説。</p>
       </a>
       <a class="guide-card" href="/issen/">
         <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12 L14 12 M14 12 L10 7 M14 12 L10 17"/><circle cx="19" cy="12" r="2"/></svg></span>
-        <span class="tag">Core Mechanic</span>
-        <h3>Issen Deep Dive</h3>
-        <p>The white-flash timing cue, True Issen vs. Deflect Issen, and what's confirmed about chaining.</p>
+        <span class="tag">中核システム <span class="en-tag">EN</span></span>
+        <h3>一閃徹底解説</h3>
+        <p>白閃光のタイミング、True Issenとディフレクト一閃の違い、連鎖について分かっていることを解説。</p>
       </a>
     </div>
   </div>
 
   <div class="guide-section guide-section--walkthrough">
     <div class="guide-section-head">
-      <h3>Walkthrough</h3>
-      <p>Story progression, bosses, and puzzles.</p>
+      <h3>攻略</h3>
+      <p>ストーリー進行・ボス・パズル</p>
     </div>
     <div class="guide-grid">
-      <a class="guide-card" href="/walkthrough/">
+      <a class="guide-card" href="/ja/walkthrough/">
         <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6 C10 4.5 6 4 4 5 L4 18 C6 17 10 17.5 12 19 C14 17.5 18 17 20 18 L20 5 C18 4 14 4.5 12 6 Z"/><line x1="12" y1="6" x2="12" y2="19"/></svg></span>
-        <span class="tag">Walkthrough</span>
-        <h3>Quest Walkthrough</h3>
-        <p>All 7 chapters, boss placements, Oni Armament unlocks, and the point of no return.</p>
+        <span class="tag">攻略チャート</span>
+        <h3>攻略チャート</h3>
+        <p>全7章、ボスの配置、鬼ノ武具の入手先、そして後戻りできなくなるポイントを解説。</p>
       </a>
-      <a class="guide-card" href="/bosses/">
+      <a class="guide-card" href="/ja/bosses/">
         <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18 L4 10 L8 14 L12 7 L16 14 L20 10 L20 18 Z"/></svg></span>
-        <span class="tag">Boss Guide</span>
-        <h3>Boss Guides</h3>
-        <p>All 18 bosses — key mechanics, attack tells, and the Deflect-into-Break-Issen loop for each.</p>
+        <span class="tag">ボス攻略</span>
+        <h3>ボス攻略</h3>
+        <p>全18体のボスの攻撃の見切り方と、受け流し→崩し一閃の型をボスごとに解説。</p>
       </a>
       <a class="guide-card" href="/puzzles/">
         <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9 A3 3 0 1 1 12 13 L12 15"/><circle cx="12" cy="18" r="0.5" fill="currentColor"/></svg></span>
-        <span class="tag">Puzzle Solutions</span>
-        <h3>Puzzle Solutions</h3>
-        <p>The mask puzzle, Number Rotator chests, and how the Hidden Map treasure system works.</p>
+        <span class="tag">パズル解法 <span class="en-tag">EN</span></span>
+        <h3>パズル解法</h3>
+        <p>仮面パズル、ナンバーローテーターの宝箱、隠しマップの宝の仕組みを解説。</p>
       </a>
       <a class="guide-card" href="/playtime/">
         <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 16 14"/></svg></span>
-        <span class="tag">Walkthrough</span>
-        <h3>How Long to Beat</h3>
-        <p>Main story, completionist, and Platinum playtime — four numbers, all cross-checked.</p>
+        <span class="tag">攻略チャート <span class="en-tag">EN</span></span>
+        <h3>クリア時間</h3>
+        <p>メインストーリー、コンプリート、プラチナまでの時間——4つの数字を全て検証済み。</p>
       </a>
     </div>
   </div>
 
   <div class="guide-section guide-section--world">
     <div class="guide-section-head">
-      <h3>World</h3>
-      <p>Locations, secrets, and collectibles.</p>
+      <h3>ワールド</h3>
+      <p>場所・秘密・収集要素</p>
     </div>
     <div class="guide-grid">
       <a class="guide-card" href="/shrines/">
         <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 20 L6 10 L12 6 L18 10 L18 20 Z"/><line x1="4" y1="20" x2="20" y2="20"/><line x1="10" y1="20" x2="10" y2="14" /><line x1="14" y1="20" x2="14" y2="14"/></svg></span>
-        <span class="tag">World</span>
-        <h3>Shrine Locations</h3>
-        <p>How Spirit Mirrors work — save points, fast travel, and upgrades — and where they're distributed.</p>
+        <span class="tag">ワールド <span class="en-tag">EN</span></span>
+        <h3>神社の場所</h3>
+        <p>精霊鏡の仕組み(セーブ・ファストトラベル・強化)と、その配置場所を解説。</p>
       </a>
       <a class="guide-card" href="/items/">
         <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21 C12 21 19 14.5 19 9.5 A7 7 0 1 0 5 9.5 C5 14.5 12 21 12 21 Z"/><circle cx="12" cy="9.5" r="2.3"/></svg></span>
-        <span class="tag">World</span>
-        <h3>Item Locations</h3>
-        <p>Hozuki Pouches, Charms, and enhancement materials — what they do and where to prioritize.</p>
+        <span class="tag">ワールド <span class="en-tag">EN</span></span>
+        <h3>アイテムの場所</h3>
+        <p>瓢箪袋、お守り、強化素材——それぞれの効果と優先順位を解説。</p>
       </a>
       <a class="guide-card" href="/secrets/">
         <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 3 L12 6 M12 18 L12 21 M3 12 L6 12 M18 12 L21 12"/></svg></span>
-        <span class="tag">World</span>
-        <h3>Secret Areas</h3>
-        <p>Ability-gated hidden routes, the locked-door bow trick, and Oni Shortcuts.</p>
+        <span class="tag">ワールド <span class="en-tag">EN</span></span>
+        <h3>隠しエリア</h3>
+        <p>能力で開放される隠しルート、封鎖扉を弓で開ける裏技、鬼の近道を解説。</p>
       </a>
       <a class="guide-card" href="/collectibles/">
         <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20 C12 20 4 14.5 4 9.2 C4 6.3 6.3 4 9.2 4 C10.9 4 12 5.1 12 5.1 C12 5.1 13.1 4 14.8 4 C17.7 4 20 6.3 20 9.2 C20 14.5 12 20 12 20 Z"/></svg></span>
-        <span class="tag">World</span>
-        <h3>Collectibles</h3>
-        <p>All 274 items across 11 categories, and the trophy each one unlocks.</p>
+        <span class="tag">ワールド <span class="en-tag">EN</span></span>
+        <h3>収集品</h3>
+        <p>全274点・11カテゴリーの収集要素と、それぞれが解放するトロフィーを解説。</p>
       </a>
       <a class="guide-card" href="/trophies/">
         <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4 H17 V9 A5 5 0 0 1 7 9 Z"/><path d="M7 5 H3 V7 A4 4 0 0 0 7 11"/><path d="M17 5 H21 V7 A4 4 0 0 1 17 11"/><line x1="12" y1="14" x2="12" y2="18"/><line x1="9" y1="20" x2="15" y2="20"/></svg></span>
-        <span class="tag">World</span>
-        <h3>Trophy Guide</h3>
-        <p>All 52 trophies, the Story/Action/Carnage difficulty path, and the fastest route to Platinum.</p>
+        <span class="tag">ワールド <span class="en-tag">EN</span></span>
+        <h3>トロフィーガイド</h3>
+        <p>全52種のトロフィー、Story/Action/Carnageの難易度ルート、プラチナへの最短ルートを解説。</p>
       </a>
       <a class="guide-card" href="/characters/">
         <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 20 C3.5 15.5 6 13 9 13 C12 13 14.5 15.5 14.5 20"/><circle cx="17.5" cy="9" r="2.4"/><path d="M13.5 20 C13.5 16.4 15.3 14.3 17.5 14.3 C19.7 14.3 21.5 16.4 21.5 20"/></svg></span>
-        <span class="tag">World</span>
-        <h3>Characters</h3>
-        <p>Musashi, his allies, his rivals, and the mystery behind the Oni Gauntlets.</p>
+        <span class="tag">ワールド <span class="en-tag">EN</span></span>
+        <h3>キャラクター</h3>
+        <p>武蔵、その仲間、ライバル、そして鬼の籠手を巡る謎の人物を紹介。</p>
       </a>
       <a class="guide-card" href="/outfits/">
         <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4 L4 7 L6 10 L8 8.5 L8 20 L16 20 L16 8.5 L18 10 L20 7 L16 4 C16 5.5 14.2 6.5 12 6.5 C9.8 6.5 8 5.5 8 4 Z"/></svg></span>
-        <span class="tag">World</span>
-        <h3>Outfits &amp; Sword Skins</h3>
-        <p>Every costume, haori, and katana skin — how to unlock each one, cosmetics only.</p>
+        <span class="tag">ワールド <span class="en-tag">EN</span></span>
+        <h3>衣装・スキン</h3>
+        <p>全ての衣装・羽織・太刀のスキンと入手方法(見た目のみの変化)を解説。</p>
       </a>
       <a class="guide-card" href="/new-game-plus/">
         <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12 A8 8 0 1 1 7 18"/><path d="M4 12 L4 6 M4 12 L9 12"/></svg></span>
-        <span class="tag">World</span>
+        <span class="tag">ワールド <span class="en-tag">EN</span></span>
         <h3>New Game Plus</h3>
-        <p>What carries over into Carnage, what resets, and how to prepare before you start.</p>
+        <p>Carnageで引き継がれる要素、リセットされる要素、始める前の準備を解説。</p>
       </a>
     </div>
   </div>
 
   <div class="about">
-    <b>About this site:</b> Onimusha: Way of the Sword is an action-adventure game developed and published by Capcom, released September 4, 2026 — the first mainline entry in the Onimusha series since Onimusha: Dawn of Dreams (2006). Set in a stylized, demon-twisted version of feudal Kyoto, it follows Miyamoto Musashi (modeled on legendary actor Toshiro Mifune) as he cuts through the corrupting force known as Malice. This is an independent fan wiki and is not affiliated with or endorsed by Capcom. Guides are being written and expanded as we play through the game — check back for updates.
+    <b>このサイトについて：</b> 『鬼武者 Way of the Sword』はCapcomが開発・発売するアクションアドベンチャーゲームで、2026年9月4日に発売されました——『鬼武者 Dawn of Dreams』(2006年)以来、シリーズ本編として約20年ぶりの新作です。瘴気に侵された様式化された江戸時代初期の京都を舞台に、名優・三船敏郎をモデルにした宮本武蔵が、瘴気による穢れと戦う物語です。当サイトは非公式のファンサイトであり、Capcomとは一切関係ありません。日本語版は現在3ページ(戦闘・ボス攻略・攻略チャート)のみで、その他のガイドは英語版のみとなります(ナビゲーションの「EN」タグで表示)。順次翻訳を追加予定です。
   </div>
 
-  <footer>This is an unofficial, fan-made wiki. All game names, characters, and assets are property of their respective owners.</footer>
+  <footer>これは非公式のファンメイドWikiです。ゲームの名称・キャラクター・アセットは各権利者に帰属します。</footer>
 </div>
 </body>
 </html>
