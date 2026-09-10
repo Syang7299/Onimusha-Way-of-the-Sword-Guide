@@ -3,23 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Onimusha: Way of the Sword Characters Guide — Full Cast &amp; Roles</title>
-<meta name="description" content="Every named character in Onimusha: Way of the Sword — Musashi, his allies, his rivals, and the mysterious figure behind the Oni Gauntlets.">
-<link rel="canonical" href="https://onimushaguides.com/characters/">
+<title>Onimusha: Way of the Sword New Game Plus Guide — What Carries Over &amp; What Resets</title>
+<meta name="description" content="Everything New Game Plus and Carnage difficulty actually do in Onimusha: Way of the Sword — what carries over, what resets, and how to prepare before you start.">
+<link rel="canonical" href="https://onimushaguides.com/new-game-plus/">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Onimusha: Way of the Sword Characters Guide">
-<meta property="og:description" content="Musashi, his allies, his rivals, and who's really behind the Oni Gauntlets.">
-<meta property="og:url" content="https://onimushaguides.com/characters/">
+<meta property="og:title" content="Onimusha: Way of the Sword New Game Plus Guide">
+<meta property="og:description" content="What carries over into New Game Plus, what resets, and how to prepare.">
+<meta property="og:url" content="https://onimushaguides.com/new-game-plus/">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Onimusha: Way of the Sword Characters Guide",
-  "description": "Every named character in Onimusha: Way of the Sword — Musashi, his allies, his rivals, and the mysterious figure behind the Oni Gauntlets.",
-  "url": "https://onimushaguides.com/characters/",
-  "mainEntityOfPage": "https://onimushaguides.com/characters/",
-  "dateModified": "2026-09-09"
+  "headline": "Onimusha: Way of the Sword New Game Plus Guide",
+  "description": "Everything New Game Plus and Carnage difficulty actually do in Onimusha: Way of the Sword — what carries over, what resets, and how to prepare before you start.",
+  "url": "https://onimushaguides.com/new-game-plus/",
+  "mainEntityOfPage": "https://onimushaguides.com/new-game-plus/",
+  "dateModified": "2026-09-10"
 }
 </script>
 <script type="application/ld+json">
@@ -29,18 +29,18 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Who is the protagonist of Onimusha: Way of the Sword?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Miyamoto Musashi, modeled on legendary actor Toshiro Mifune, who gains an Oni Gauntlet and fights the demonic Genma while pursuing mastery of the sword." }
+      "name": "How do you unlock New Game Plus in Onimusha: Way of the Sword?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Finish the story once. That's the only requirement — New Game Plus and Carnage difficulty both open up as soon as you complete your first playthrough." }
     },
     {
       "@type": "Question",
-      "name": "Who gives Musashi his Oni Gauntlet?",
-      "acceptedAnswer": { "@type": "Answer", "text": "A mysterious figure referred to as the Man in White, who reportedly hands out Oni Gauntlets to both Musashi and his rival Sasaki Ganryu for unclear reasons." }
+      "name": "Do Red Souls carry over into New Game Plus?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. Red Souls reset to zero, so spend everything you're holding before you finish the final mission." }
     },
     {
       "@type": "Question",
-      "name": "Is Sasaki Ganryu a boss fight?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Yes — he's both a named rival character in the story and one of the 18 boss encounters, fought multiple times across the campaign. See our boss guides for the fight breakdown." }
+      "name": "Do sword and Gauntlet upgrades carry over?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No — enhancement levels for the katana and Oni Gauntlet reset. The Oni Armaments themselves stay unlocked, but you re-earn their enhancement levels from scratch." }
     }
   ]
 }
@@ -88,10 +88,6 @@
     font-family: var(--font-display); font-weight: 700; font-size: 19px;
     margin: 38px 0 14px; color: var(--ink);
   }
-  h3{
-    font-family: var(--font-display); font-weight: 700; font-size: 16px;
-    margin: 0 0 4px; color: var(--gold);
-  }
   p{ font-size: 15px; line-height: 1.75; color: var(--ink); margin: 0 0 16px; }
   ul, ol{ padding-left: 20px; margin: 0 0 16px; }
   li{ font-size: 15px; line-height: 1.75; margin-bottom: 8px; }
@@ -107,19 +103,22 @@
   }
   .callout p{ margin: 0; }
 
-  .char-card{
-    background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
-    padding: 18px 20px; margin-bottom: 14px;
+  .compare{ display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 8px 0 26px; }
+  @media (max-width: 600px){ .compare{ grid-template-columns: 1fr; } }
+  .compare-col{
+    border-radius: 12px; padding: 16px 18px; border: 1px solid var(--border);
   }
-  .char-card h3{ font-size: 16.5px; margin: 0 0 4px; }
-  .char-card .role{
-    font-family: var(--font-mono); font-size: 11px; color: var(--ink-faint);
-    text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 10px;
+  .compare-col.keep{ background: var(--gold-soft); border-color: var(--gold); }
+  .compare-col.reset{ background: var(--primary-soft); border-color: var(--primary); }
+  .compare-col h3{
+    font-family: var(--font-mono); font-size: 12px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.06em; margin: 0 0 12px;
   }
-  .char-card p{ font-size: 14.5px; color: var(--ink-soft); margin: 0 0 8px; }
-  .char-card p:last-child{ margin-bottom: 0; }
-  .char-card.rival{ border-color: var(--primary); }
-  .char-card.rival .role{ color: var(--primary); }
+  .compare-col.keep h3{ color: var(--gold); }
+  .compare-col.reset h3{ color: var(--primary); }
+  .compare-col ul{ margin: 0; padding-left: 18px; }
+  .compare-col li{ font-size: 13.5px; margin-bottom: 7px; color: var(--ink-soft); }
+  .compare-col li b{ color: var(--ink); }
 
   .site-header{
     background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
@@ -202,61 +201,66 @@
   </div>
 
   <p class="eyebrow">Onimusha: Way of the Sword · World</p>
-  <h1>Characters Guide</h1>
-  <p class="lede">Musashi, the people around him, and the rival who keeps crossing his path. Here's the cast and how each of them fits into the story.</p>
+  <h1>New Game Plus Guide</h1>
+  <p class="lede">One requirement to unlock it, one currency you're about to lose, and a carryover list that's more selective than you'd expect. Here's exactly what New Game Plus and Carnage difficulty do.</p>
 
   <div class="notice">
-    This guide reflects what's known shortly after launch (September 4, 2026), cross-checked across multiple independent sources. It covers named story characters only — for the demonic Genma enemies and full boss roster, see our <a href="/bosses/">boss guides</a> instead of duplicating that list here.
+    This guide reflects what's known shortly after launch (September 4, 2026), cross-checked across multiple independent sources. Two detailed breakdowns agree closely on the lists below. The one point they don't fully agree on is <b>outfits/clothing</b> — one source marks it "unconfirmed" and another contradicts itself internally (listing outfits under both "carries over" and "resets" in the same breakdown). We're not going to guess which is right, so treat outfit carryover as genuinely unsettled until more players confirm it.
   </div>
 
-  <h2>Miyamoto Musashi</h2>
-  <div class="char-card">
-    <h3>Miyamoto Musashi</h3>
-    <div class="role">Protagonist</div>
-    <p>Modeled on legendary actor Toshiro Mifune, Musashi arrives in early Edo-period Kyoto seeking to master the "Way of the Sword." He fights with a katana that shifts between two stances, plus the paired-sword Two Celestials among his <a href="/weapons/">Oni Armaments</a> — not a permanent dual-wield style, despite how some early previews described him.</p>
-    <p>Over the story he gains an Oni Gauntlet, unlocking the <a href="/combat/">Parry/Deflect/Issen combat system</a> and the <a href="/skills/">skill trees</a> that come with it.</p>
-  </div>
+  <h2>How to unlock it</h2>
+  <p>Finish the story once. That's the entire requirement — no specific ending, side-content completion, or difficulty choice needed. As soon as the credits roll, both New Game Plus and <b>Carnage</b> difficulty (the hardest tier, above Story and Action) become available. See our <a href="/trophies/">trophy guide</a> for the full Story/Action/Carnage breakdown and why Carnage matters for the Platinum.</p>
 
-  <h2>Allies</h2>
-  <div class="char-card">
-    <h3>Oni Lady</h3>
-    <div class="role">Gauntlet Spirit</div>
-    <p>A mysterious presence inhabiting Musashi's Oni Gauntlet. She serves as his guide, helping him understand what the gauntlet can do as his powers grow.</p>
+  <h2>What carries over vs. what resets</h2>
+  <div class="compare">
+    <div class="compare-col keep">
+      <h3>Carries Over</h3>
+      <ul>
+        <li><b>Skills</b> — enhanced Basic and Special skills, including Oni Vision</li>
+        <li><b>Awakened Oni abilities</b> — Eye, Arm, and Leg</li>
+        <li><b>Charms</b> and their enhancement levels</li>
+        <li><b>Hozuki Pouches</b> and their enhancement levels</li>
+        <li><b>Oni Armaments</b> — stay unlocked (their upgrade level does not, see right)</li>
+        <li>Items and offerings</li>
+        <li><b>Genma Notes</b> collected</li>
+        <li><b>Lion Dogs</b> rescued</li>
+        <li>Boss Rematch unlock/completion status</li>
+      </ul>
+    </div>
+    <div class="compare-col reset">
+      <h3>Resets</h3>
+      <ul>
+        <li><b>Red Souls</b> — back to zero, spend them all first</li>
+        <li>Sword and Gauntlet <b>enhancement levels</b></li>
+        <li>Equipment materials — Fine Silk Cloth, Tamahagane must be recollected</li>
+        <li>Oni Bow — back to base level</li>
+        <li>Mysteries of Kyoto progress</li>
+        <li>Chance Encounters progress</li>
+        <li>Spirit Mirror unlock/access progress</li>
+        <li>Story and side-mission progress</li>
+      </ul>
+    </div>
   </div>
-  <div class="char-card">
-    <h3>Ono no Takamura</h3>
-    <div class="role">Veteran Gauntlet-Wielder</div>
-    <p>An older, formidable warrior who carries his own Oni Gauntlet and has deep knowledge of what they are. He acts as a mentor figure — and he's the character you speak to in Chapter 7 to trigger the <a href="/walkthrough/">final mission and the point of no return</a>.</p>
-  </div>
-  <div class="char-card">
-    <h3>Izumo no Okuni</h3>
-    <div class="role">Kabuki Dancer</div>
-    <p>A famous Kabuki performer seeking strength to fight the Genma herself, training under Takamura. She offers a perspective on the conflict outside the warrior class.</p>
-  </div>
+  <p>The Oni Armaments themselves are worth calling out specifically: you keep having unlocked all seven going into New Game Plus (see our <a href="/weapons/">weapon guide</a>), but their individual enhancement levels reset along with the rest of your gear. You'll be re-upgrading them, just without having to re-find them.</p>
 
-  <h2>Rivals</h2>
-  <div class="char-card rival">
-    <h3>Sasaki Ganryu</h3>
-    <div class="role">Rival Swordsman</div>
-    <p>Musashi's central rival — a technically gifted swordsman whose duel with Musashi is personal, separate from the Genma threat. Ganryu is also one of the <a href="/bosses/">18 boss encounters</a>, fought more than once across the campaign.</p>
-  </div>
-  <div class="char-card rival">
-    <h3>Man in White</h3>
-    <div class="role">Unknown Motives</div>
-    <p>A mysterious figure reported to have handed Oni Gauntlets to both Musashi and Ganryu. His reasons for doing so — and who he actually is — are left unclear through most of the story. This character is less consistently covered across early sources than the others on this page, so treat the details as a starting read rather than confirmed.</p>
-  </div>
+  <h2>Before you start</h2>
+  <ul>
+    <li><b>Spend every Red Soul you're holding.</b> They don't carry over, and there's no reason to bank them going into the final mission.</li>
+    <li><b>Finish collecting anything you care about first.</b> Genma Notes, Lion Dogs, and Chance Encounters carry over by completion count where noted above, but Spirit Mirror and Mysteries of Kyoto progress do not — see our <a href="/collectibles/">collectibles guide</a> for what's worth prioritizing.</li>
+    <li><b>Carnage is a commitment.</b> Once you select it for a New Game Plus run, you can't casually drop back to an easier difficulty mid-run the way you can switch between Story and Action.</li>
+  </ul>
 
   <div class="callout">
-    <p><b>Practical takeaway:</b> the cast is small and tight rather than sprawling — five named characters carry almost the entire story. If you want the mechanical side of any of them (Ganryu's boss fight, Musashi's own combat kit), our <a href="/bosses/">boss guides</a> and <a href="/combat/">combat guide</a> cover that in depth; this page is the who's-who, not the how-to-fight-them.</p>
+    <p><b>Practical takeaway:</b> New Game Plus on Carnage is really an "upgrade your character again, faster" run more than a "start from nothing" one — your skills, charms, pouches, and collectible progress mean you're not starting cold, but your sword and Gauntlet power level does reset, so don't expect to walk into Carnage overpowered. Pair this with our <a href="/trophies/">trophy guide</a>'s platinum roadmap if that's the goal.</p>
   </div>
 
   <h2>Frequently asked questions</h2>
-  <p><b>Who is the protagonist?</b><br>Miyamoto Musashi, modeled on Toshiro Mifune.</p>
-  <p><b>Who gives Musashi his Oni Gauntlet?</b><br>A mysterious figure known as the Man in White, who reportedly also armed Sasaki Ganryu.</p>
-  <p><b>Is Sasaki Ganryu a boss fight?</b><br>Yes — he's both a named character and a recurring boss. See our <a href="/bosses/">boss guides</a>.</p>
+  <p><b>How do you unlock New Game Plus?</b><br>Finish the story once — no other requirements.</p>
+  <p><b>Do Red Souls carry over?</b><br>No — they reset to zero, so spend them before the final mission.</p>
+  <p><b>Do sword and Gauntlet upgrades carry over?</b><br>No — enhancement levels reset, though the Oni Armaments stay unlocked.</p>
 
   <footer>
-    This is an unofficial, fan-made wiki based on early post-launch information and is not affiliated with or endorsed by Capcom. Character details may be refined as more of the game is explored. <a href="/">Back to the wiki home →</a>
+    This is an unofficial, fan-made wiki based on early post-launch information and is not affiliated with or endorsed by Capcom. Carryover details may be refined as more of the game is explored. <a href="/">Back to the wiki home →</a>
   </footer>
 </div>
 </body>
